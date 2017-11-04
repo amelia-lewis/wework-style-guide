@@ -1,0 +1,40 @@
+// ---------------
+// Simple Text 1
+// ---------------
+
+.simple-text-1 {
+	@extend .responsive-block;
+
+	h2 {
+		@extend .title-1;
+	}
+
+	p {
+		@extend .copy-1;
+	}
+}
+
+
+// ---------------
+// Simple Text 2
+// ---------------
+
+.simple-text-2 {
+	@extend .responsive-block;
+
+	h2 {
+		@extend .title-1;
+	}
+
+	h3 {
+		@extend .title-2;
+	}
+
+	p {
+		@extend .copy-2;
+
+		&:first-of-type {
+			@extend .copy-1;
+		}
+	}
+}

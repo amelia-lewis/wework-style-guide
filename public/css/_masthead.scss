@@ -1,0 +1,189 @@
+// ---------------
+// Masthead 1
+// ---------------
+
+.masthead-1 {
+	@extend .responsive-block;
+
+	h1 {
+		@extend .knockout;
+	}
+
+	p {
+		@extend .copy-1;
+	}
+
+	.image-caption {
+		margin-top: 15px;
+
+		@media (min-width: $screen-sm-min) {
+			margin-top: 25px;
+		}
+
+		@media (min-width: $screen-md-min) {
+			margin-top: 30px;
+		}
+	}
+}
+
+
+// ---------------
+// Masthead 2
+// ---------------
+
+.masthead-2 {
+	position: relative;
+	@extend .responsive-block;
+	padding-bottom: 0;
+
+	@media (min-width: $screen-md-min) {
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: solid white;
+			border-width: 10px 10px 0 10px;
+			box-sizing: border-box;
+			z-index: 30;
+		}
+	}
+
+	@media (min-width: $screen-md-min) {
+		min-height: 500px;
+	}
+
+	.row {
+		z-index: 20;
+		position: relative;
+	}
+
+	h1 {
+		@extend .knockout;
+
+		@media (min-width: $screen-md-min) {
+			font-size: 120px;
+			line-height: 100px;
+			width: 60%;
+		}
+	}
+
+	p {
+		@extend .copy-1;
+		position: relative;
+
+		&:after {
+			content: "";
+			background: rgba(#FEE3D6, 0.5);
+			position: absolute;
+			top: -30px;
+			left: -2000px;
+			right: -2000px;
+			bottom: -100px;
+			z-index: -1;
+
+			@media (min-width: $screen-md-min) {
+				top: -70px;
+				bottom: -50px;
+			}
+		}
+	}
+
+	.image {
+		background: $black-50 no-repeat center / cover;
+		width: 100%;
+		height: 200px;
+		z-index: 10;
+		margin: 5px 0 0;
+
+		@media (min-width: $screen-sm-min) {
+			height: 300px;
+		}
+
+		@media (min-width: $screen-md-min) {
+			position: absolute;
+			top: 10px;
+			right: calc(50% + 90px;;
+			left: 10px;
+			bottom: 0;
+			width: auto;
+			margin: 0;
+			height: auto;
+		}
+	}
+}
+
+
+// ---------------
+// Masthead 3
+// ---------------
+
+.masthead-3 {
+	position: relative;
+
+	h1 {
+		@extend .knockout;
+	}
+
+	p {
+		@extend .copy-1;
+
+		&:last-of-type {
+			margin-bottom: 0px;
+		}
+	}
+
+	.col-xs-12 {
+		background: $white;
+		padding-top: 150px;
+		padding-bottom: 50px;
+		z-index: 10;
+		position: relative;
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 45px;
+			z-index: 10;
+			background: $white;
+		}
+
+		&:before {
+			left: -45px;
+		}
+
+		&:after {
+			right: -45px;
+		}
+	}
+
+	.image-1 {
+		background-color: $black-50;
+		background-size: cover;
+		background-position: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 30vw;
+		border: 10px solid white;
+
+	}
+
+	.image-2 {
+		background-color: $black-50;
+		background-size: cover;
+		background-position: center;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 70vw;
+		border: 10px solid white;
+	}
+}
