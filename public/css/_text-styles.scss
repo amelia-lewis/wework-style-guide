@@ -228,7 +228,7 @@ a {
 // Lists
 // ---------------
 
-ul {
+ul.bulleted-list {
 	list-style: none;
 	padding: 0 0 15px;
 
@@ -250,7 +250,7 @@ ul {
 		}
 	}
 
-	&.link-list {
+	&.bulleted-link-list {
 		li:before {
 			background-color: $blue-50;
 		}

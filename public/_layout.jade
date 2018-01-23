@@ -1,7 +1,7 @@
 doctype
 html
 	head
-		title WeWork Style Guide
+		title WeWork
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		link(rel="stylesheet", href="/css/main.css")
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css")
@@ -9,8 +9,16 @@ html
 	body
 		header
 			.content-wrap
-				a(href="/")
-					include partials/logo
-					span Style Guide
+				.row.middle-xs.between-xs
+					.header-lhs
+						a(href="/").header-logo
+							include partials/logo
+						ul.header-nav
+							li: a(href="") Locations
+							li: a(href="") Plans &amp; Pricing
+							li: a(href="") Enterprise
+							li: a(href="") Mission
+					.header-rhs
+						button.btn.btn--secondary-navigation Log In
 
 		!= yield
