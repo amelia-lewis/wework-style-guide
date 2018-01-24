@@ -1,0 +1,22 @@
+include ../../partials/breadcrumbs.jade
+include ../../partials/masthead.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/style-guide", title: "Style Guide"}, {link: "/style-guide/masthead", title: "Masthead"})
+
+.responsive-block
+	.content-wrap
+		h2.title-1 Masthead #1
+
+	+masthead-1("Reimagine your workspace", "This is our craft. In over 50 cities, our architects, designers, and culture-catalysts are creating spaces to reimagine employees' days, from satellite offices to swing spaces and branded HQs.", "https://locations-api-production.imgix.net/locations/image/4f6fd5d6-0899-11e7-9462-0a488af3e541/WeWork_Weihai-final-large-3.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=entropy&fit=crop&w=1800&h=800", "WeWork Weihai Lu", "Shanghai, China")
+
+.responsive-block
+	.content-wrap
+		h2.title-1 Masthead #2
+	
+	+masthead-2("Why WeWork", "Workspace, community, and services for a global network of creators.", "https://locations-api-production.imgix.net/locations/image/4f6fd5d6-0899-11e7-9462-0a488af3e541/WeWork_Weihai-final-large-3.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=entropy&fit=crop&w=1800&h=800")
+
+.responsive-block
+	.content-wrap
+		h2.title-1 Masthead #3
+	
+	+masthead-3("Why WeWork", "Workspace, community, and services for a global network of creators.", "https://cdn.wework.com/6vy33zo2mgy3/3PYfigapby6GySkWmCiw0U/584a41ca2c2ec680ddcd4bcf550773f9/c643b8a57d10f74b5c39bee4ec4e27056e20784e.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=400&h=400", "https://locations-api-production.imgix.net/locations/image/4f6fd5d6-0899-11e7-9462-0a488af3e541/WeWork_Weihai-final-large-3.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=entropy&fit=crop&w=1800&h=800")

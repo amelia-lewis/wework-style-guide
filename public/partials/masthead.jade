@@ -1,0 +1,32 @@
+include image-caption.jade
+
+mixin masthead-1(headline, copy, img, caption1, caption2)
+	.masthead-1
+		.content-wrap
+			.row
+				.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+					h1= headline
+					p= copy
+
+			+image-caption(img, caption1, caption2)
+
+mixin masthead-2(headline, copy, img)
+	.masthead-2
+		.content-wrap
+			.row
+				.col-xs-12.col-md-6.col-md-offset-6
+					h1= headline
+					p= copy
+
+		.image(style="background-image: url('" + img + "');")
+
+mixin masthead-3(headline, copy, img1, img2)
+	.masthead-3
+		.image-1(style="background-image: url('" + img1 + "');")
+		.image-2(style="background-image: url('" + img2 + "');")
+
+		.content-wrap
+			.row
+				.col-xs-12.col-md-6.col-md-offset-1.col-lg-5.col-lg-offset-2
+					h1= headline
+					p= copy

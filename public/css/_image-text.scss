@@ -1,0 +1,55 @@
+// ---------------
+// Image & Text
+// ---------------
+
+.large-image-text {
+	@extend .responsive-block;
+	padding-top: 0;
+	
+	.image-caption {
+		margin: 0 0 20px;
+
+		@media (min-width: $screen-sm-min) {
+			margin: 0 0 30px;
+		}
+
+		@media (min-width: $screen-md-min) {
+			margin: 0 0 40px;
+		}
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 0 50px;
+		}
+	}
+}
+
+.small-image-text {
+	@extend .responsive-block;
+
+	@media (min-width: $screen-md-max) {
+		.image-caption {
+			height: 100%;
+
+			.image {
+				height: 100%;
+				min-height: 300px;
+			}
+		}
+	}
+
+	.text-container {
+		padding: 20px 0 0;
+
+		@media (min-width: $screen-sm-min) {
+			padding: 30px 0 0;
+		}
+
+		@media (min-width: $screen-md-min) {
+			padding: 40px 0;
+		}
+
+		@media (min-width: $screen-lg-min) {
+			padding: 50px 0;
+		}
+	}
+}

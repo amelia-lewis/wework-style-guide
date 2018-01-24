@@ -11,7 +11,8 @@
 // Patterns
 @import "_image-caption";
 @import "_masthead";
-@import "_simple-text";
+@import "_breadcrumbs";
+@import "_image-text";
 @import "_faqs";
 
 
@@ -22,13 +23,19 @@
 // Base
 // ---------------
 
+html {
+  background: $bg-3;
+}
+
 body {
   font-family: $apercu;
   font-size: 16px;
   background: $white;
   color: $black-50;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1600px;
+  min-height: 100vh;
 }
 
 * {

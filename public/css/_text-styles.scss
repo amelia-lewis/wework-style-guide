@@ -48,7 +48,6 @@
 $knockout: "Knockout 48 A", "Knockout 48 B", "Helvetica", "Arial", sans-serif;
 $apercu: "apercu", "Helvetica", "Arial", sans-serif;
 
-
 .text-light {
 	font-weight: 200;
 }
@@ -77,10 +76,27 @@ a {
 
 
 // ---------------
-// Knockout
+// Impact
 // ---------------
 
-.knockout {
+.impact-1 {
+	font-family: $knockout;
+	@extend .text-light;
+	font-size: 60px;
+	line-height: 50px;
+	letter-spacing: 1px;
+	margin: 0 0 10px;
+	text-transform: uppercase;
+
+	@media (min-width: $screen-md-min) {
+		font-size: 120px;
+		line-height: 100px;
+		letter-spacing: 2px;
+		margin: 0 0 20px;
+	}
+}
+
+.impact-2 {
 	font-family: $knockout;
 	@extend .text-light;
 	font-size: 50px;
@@ -207,13 +223,15 @@ a {
 .copy-1,
 .copy-2,
 .copy-3,
-.copy-4 {
+// .copy-4,
+.bulleted-list li,
+.bulleted-link-list li {
 	strong {
-		font-weight: 600;
+		@extend .text-medium;
 	}
 
 	a {
-		font-weight: 600;
+		@extend .text-medium;
 		color: $blue-50;
 		border-bottom: 1px solid transparent;
 

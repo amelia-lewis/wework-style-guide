@@ -1,13 +1,13 @@
+include partials/masthead.jade
+include partials/image-text.jade
+
++masthead-2("Where Businesses Thrive", "Whether you need a desk, office suite, or entire HQ, we create environments that increase productivity, innovation, and collaboration.", "https://locations-api-production.imgix.net/locations/image/4f6fd5d6-0899-11e7-9462-0a488af3e541/WeWork_Weihai-final-large-3.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=entropy&fit=crop&w=1800&h=800")
+
 .content-wrap
 	.responsive-block
-		h2.title-2 Components
-		ul.bulleted-list.bulleted-link-list
-			li: a(href="/text-styles") Text styles
-			li: a(href="/buttons") Buttons
+		.row
+			.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+				h2.title-1 Welcome to WeWork
+				p.copy-2 WeWork is a global network of workspaces where companies and people grow together. We transform buildings into dynamic environments for creativity, focus, and connection. More than just the best place to work, though, this is a movement toward humanizing work. We believe that CEOs can help each other, offices can use the comforts of home, and we can all look forward to Monday if we find real meaning in what we do.
 
-		h2.title-2 Patterns
-		ul.bulleted-list.bulleted-link-list
-			li: a(href="/patterns/image-caption") Image + caption
-			li: a(href="/patterns/masthead") Masthead
-			li: a(href="/patterns/simple-text") Simple text
-			li: a(href="/patterns/faqs") FAQs
+	+small-image-text("Workspace Is Our Craft", "Teams of artists, designers, and engineers custom build every space, prioritizing natural light, comfort, and inspiration.", "", "", "https://cdn.wework.com/6vy33zo2mgy3/3PYfigapby6GySkWmCiw0U/584a41ca2c2ec680ddcd4bcf550773f9/c643b8a57d10f74b5c39bee4ec4e27056e20784e.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=400&h=400", "WeWork Holyoke", "Seattle, Washington")

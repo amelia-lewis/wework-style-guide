@@ -1,0 +1,8 @@
+mixin breadcrumbs(...items)
+	.breadcrumbs
+		.content-wrap
+			.row
+				.col-xs-12
+					ul.breadcrumb-nav
+						each item in items
+							li: a(href=item.link)= item.title
