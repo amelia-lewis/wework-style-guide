@@ -1,0 +1,15 @@
+include image-caption.jade
+
+mixin breakout-image(headline, copy, buttonCopy, buttonLink, img, caption1, caption2)
+	.breakout-image
+		.content-wrap
+			.row
+				.col-xs-12.col-md-6
+					+image-caption(img, caption1, caption2)
+
+				.col-xs-12.col-md-5.col-md-offset-1
+					.text-container
+						h1= headline
+						p= copy
+						if buttonCopy
+							a.btn.btn--primary-navigation(href=buttonLink)= buttonCopy

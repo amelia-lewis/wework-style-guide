@@ -1,0 +1,9 @@
+include ../../partials/breadcrumbs.jade
+include ../../partials/breakout-image.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/style-guide", title: "Style Guide"}, {link: "/style-guide/breakout-image", title: "Breakout Image"})
+
+.content-wrap
+	.responsive-block
+		h2.title-1 Breakout Image
+		+breakout-image("Space as an Experience", "The nature of work is changing. Recruitment, retention, innovation, and productivity now require not just coffee, but also yoga, not just printers, but also art installations. ", "Why WeWork", "/", "https://cdn.wework.com/6vy33zo2mgy3/1QCWhNZbnyei0yK6sKSsc/a083d0a0734235084b6642355d672857/a5d8e2451d4173fb8af4af8e375fe27ad9d77971.png", "WeWork George Street", "Sydney, Australia")
