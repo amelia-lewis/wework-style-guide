@@ -9,12 +9,24 @@ mixin large-image-text(headline, copy, buttonCopy, buttonLink, img, caption1, ca
 				p.copy-2= copy
 				a.btn.btn--primary-navigation(href=buttonLink)= buttonCopy
 
-mixin small-image-text(headline, copy, buttonCopy, buttonLink, img, caption1, caption2)
+mixin small-image-text-left(headline, copy, buttonCopy, buttonLink, img, caption1, caption2)
 	.small-image-text
 		.row
 			.col-xs-12.col-lg-5
 				+image-caption(img, caption1, caption2)
 			.col-xs-12.col-lg-6.col-lg-offset-1
+				.text-container
+					h2.title-2= headline
+					p.copy-2= copy
+					if buttonCopy
+						a.btn.btn--primary-navigation(href=buttonLink)= buttonCopy
+
+mixin small-image-text-right(headline, copy, buttonCopy, buttonLink, img, caption1, caption2)
+	.small-image-text
+		.row
+			.col-xs-12.col-lg-5.last-lg.col-lg-offset-1
+				+image-caption(img, caption1, caption2)
+			.col-xs-12.col-lg-6
 				.text-container
 					h2.title-2= headline
 					p.copy-2= copy
