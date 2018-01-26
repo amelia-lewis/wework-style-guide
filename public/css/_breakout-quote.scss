@@ -1,0 +1,49 @@
+// ---------------
+// Breakout Quote
+// ---------------
+
+.breakout-quote {
+	@extend .responsive-block;
+	
+	.quote-bg {
+		position: relative;
+		padding: 20px 0;
+		z-index: 1;
+
+		@media (min-width: $screen-sm-min) {
+			padding: 30px 0;
+		}
+
+		@media (min-width: $screen-md-min) {
+			padding: 40px 0;
+		}
+
+		@media (min-width: $screen-lg-min) {
+			padding: 50px 0;
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -200px;
+			right: 0;
+			bottom: 0;
+			background: $black-50 url("../assets/img/bg-isobar-dk.jpg") repeat;
+			background-size: 600px;
+			z-index: -1;
+		}
+	}
+
+	h1 {
+		@extend .title-1;
+		color: $notwhite;
+		z-index: 10
+	}
+
+	p {
+		@extend .copy-3;
+		color: $notwhite;
+		z-index: 10
+	}
+}

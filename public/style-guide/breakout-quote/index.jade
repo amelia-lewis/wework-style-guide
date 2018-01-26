@@ -1,0 +1,9 @@
+include ../../partials/breadcrumbs.jade
+include ../../partials/breakout-quote.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/style-guide", title: "Style Guide"}, {link: "/style-guide/breakout-quote", title: "Breakout Quote"})
+
+.content-wrap
+	.responsive-block
+		h2.title-1 Breakout Quote
+		+breakout-quote("If our workspaces don’t meet your needs, we will work with you to find a space that does", "Dave Fano, Chief Product Officer, WeWork")

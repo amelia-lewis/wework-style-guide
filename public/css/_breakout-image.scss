@@ -3,7 +3,6 @@
 // ---------------
 
 .breakout-image {
-	position: relative;
 	@extend .responsive-block;
 
 	h1 {
@@ -37,8 +36,6 @@
 			.image {
 				height: 100%;
 				min-height: 400px;
-				width: calc(100% + 200px);
-				margin-left: -200px;
 			}
 		}
 	}
