@@ -1,0 +1,8 @@
+mixin case-study(logoImg, quote, avatarImg, name, title, buttonLink)
+	.case-study
+		.logo(style="background-image: url('" + logoImg + "');")
+		p.quote= quote
+		.avatar(style="background-image: url('" + avatarImg + "');")
+		p.name= name
+		p.title= title
+		a.btn.btn--tertiary-navigation(href=buttonLink) View Case Study
