@@ -1,0 +1,15 @@
+include ../../partials/breadcrumbs.jade
+include ../../partials/cross-sell.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/style-guide", title: "Style Guide"}, {link: "/style-guide/cross-sells", title: "Cross Sells"})
+
+.content-wrap
+	.responsive-block
+		h2.title-1 Cross Sells
+		.row
+			.col-xs-12.col-sm-6.col-md-4
+				+cross-sell("https://cdn.wework.com/6vy33zo2mgy3/1YqfNxg41SG2Q06GOgG22c/bab2dea387bc63b9c93ae33cf096052e/b9ffe785717b0e9aeaaa51b9e74536fecb9ec2f9.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=400&h=400", "WeWork Dumbo Heights", "Brooklyn, New York", "View Workspace", "/")
+			.col-xs-12.col-sm-6.col-md-4
+				+cross-sell("https://cdn.wework.com/6vy33zo2mgy3/4xm8cywfeEmoeSGAWS2Co6/ca740cedc4812b2032d4f57d26fd6453/e21e26c28502e6ab3b381e2b21e79e120ba4a558.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=400&h=400", "WeWork Tower 49", "New York, New York", "View Workspace", "/")
+			.col-xs-12.col-sm-6.col-md-4
+				+cross-sell("https://cdn.wework.com/6vy33zo2mgy3/5lUPbZPSX6WAaq0AqkcWuq/34dff5b9ed5cd5dfd3a48ab3bcb23a8c/1eedd1ace96b97b132f8c8aedfb6f024820b2b3d.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=400&h=400", "WeWork Houston Galleria", "Houston, Texas", "View Workspace", "/")

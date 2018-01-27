@@ -1,0 +1,44 @@
+// ---------------
+// Cross Sells
+// ---------------
+
+.cross-sell {
+	background: white;
+	border: 1px solid $bg-5;
+
+	.img {
+		background: $black-50 no-repeat center;
+		background-size: cover;
+		height: 200px;
+	}
+
+	.text-container {
+		padding: 15px 20px 10px;
+
+		h3 {
+			@extend .title-3;
+		}
+
+		p {
+			@extend .copy-4;
+		}
+	}
+}
+
+.col-xs-12.col-sm-6.col-md-4 {
+	&:nth-of-type(3), &:nth-of-type(2) {
+		display: none;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		&:nth-of-type(2) {
+			display: block;
+		}
+	}
+
+	@media (min-width: $screen-md-min) {
+		&:nth-of-type(3) {
+			display: block;
+		}
+	}
+}

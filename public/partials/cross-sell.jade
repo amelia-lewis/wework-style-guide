@@ -1,0 +1,7 @@
+mixin cross-sell(img, headline, copy, buttonCopy, buttonLink)
+	.cross-sell
+		.img(style="background-image: url('" + img + "');")
+		.text-container
+			h3= headline
+			p= copy
+			a.btn.btn--tertiary-navigation(href=buttonLink)= buttonCopy
