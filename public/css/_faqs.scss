@@ -2,37 +2,21 @@
 // FAQs
 // ---------------
 
-.faqs {
-	@extend .block-bg-1;
-	@extend .responsive-block;
 
-	h2 {
-		@extend .title-1;
+.faq-question {
+	@extend .block-white;
+	border: 1px solid $bg-5;
+	padding: 20px;
+
+	h4 {
+		@extend .title-3;
 	}
 
-	p:first-of-type {
+	p {
 		@extend .copy-2;
 	}
 
-	.faq-question {
-		@extend .block-white;
-		border: 1px solid $bg-5;
-		padding: 20px;
-
-		h4 {
-			@extend .title-4;
-		}
-
-		p {
-			@extend .copy-3;
-		}
-
-		&:first-of-type {
-			margin-top: 30px;
-		}
-
-		&:not(:last-of-type) {
-			margin-bottom: 20px;
-		}
+	&:not(:last-of-type) {
+		margin-bottom: 20px;
 	}
 }
