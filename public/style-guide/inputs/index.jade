@@ -1,0 +1,30 @@
+include ../../partials/breadcrumbs.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/style-guide", title: "Style Guide"}, {link: "/style-guide/styles", title: "Inputs"})
+
+.content-wrap
+	.responsive-block
+		label(for="name") Name
+		input(type="text" id="name" name="name" placeholder="Your full name")
+
+		label(for="email") Email
+		input(type="email" id="email" name="email" placeholder="Best email to contact you")
+
+		label(for="password") Password
+		input(type="password" id="password" name="password" placeholder="Keep it secure")
+
+		label(for="phone") Phone
+		input(type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX")
+
+		label(for="date") Date
+		input(type="date" id="date" name="date" placeholder="When is good for you?")
+
+		label(for="dropdown") Dropdown
+		select(id="dropdown" name="dropdown")
+			option Please select...
+			option(value="Option 1") Option 1
+			option(value="Option 2") Option 2
+			option(value="Option 3") Option 3
+
+		label(for="textarea") Textarea
+		textarea(id="textarea" name="textarea" placeholder="Anything else?")

@@ -1,0 +1,57 @@
+// ---------------
+// Inputs
+// ---------------
+
+label {
+	display: block;
+	@extend .text-medium;
+	font-size: 14px;
+	margin: 0 0 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+	width: 100%;
+	background: white;
+	border: 1px solid $bg-5;
+	border-radius: 2px;
+	font-family: $apercu;
+	@extend .text-light;
+	font-size: 14px;
+	color: $black-50;
+	height: 44px;
+	padding: 0 14px;
+	margin: 0 0 20px;
+	box-shadow: none;
+	transition: border-color 400ms;
+
+	&:focus {
+		outline: none;
+		border-color: $yellow-50;
+	}
+}
+
+textarea {
+	height: auto;
+	min-height: 80px;
+	padding: 14px;
+}
+
+::-webkit-input-placeholder {
+  color: $gray-50;
+}
+::-moz-placeholder { 
+  color: $gray-50;
+}
+:-ms-input-placeholder { 
+  color: $gray-50;
+}
+:-moz-placeholder { 
+  color: $gray-50;
+}
