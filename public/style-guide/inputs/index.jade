@@ -4,27 +4,55 @@ include ../../partials/breadcrumbs.jade
 
 .content-wrap
 	.responsive-block
-		label(for="name") Name
-		input(type="text" id="name" name="name" placeholder="Your full name")
+		.row
+			.col-xs-12
+				label(for="name") Name
+					input(type="text" id="name" name="name" placeholder="Your full name")
 
-		label(for="email") Email
-		input(type="email" id="email" name="email" placeholder="Best email to contact you")
+			.col-xs-12
+				label(for="email") Email
+					input(type="email" id="email" name="email" placeholder="Best email to contact you")
 
-		label(for="password") Password
-		input(type="password" id="password" name="password" placeholder="Keep it secure")
+			.col-xs-12
+				label(for="password") Password
+					input(type="password" id="password" name="password" placeholder="Keep it secure")
 
-		label(for="phone") Phone
-		input(type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX")
+			.col-xs-12
+				label(for="phone") Phone
+					input(type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX")
 
-		label(for="date") Date
-		input(type="date" id="date" name="date" placeholder="When is good for you?")
+			.col-xs-12
+				label.label--date(for="date") Date
+					input(type="date" id="date" name="date" placeholder="When is good for you?")
+					i.bi_interface-calendar
 
-		label(for="dropdown") Dropdown
-		select(id="dropdown" name="dropdown")
-			option Please select...
-			option(value="Option 1") Option 1
-			option(value="Option 2") Option 2
-			option(value="Option 3") Option 3
+			.col-xs-12
+				label.label--dropdown(for="dropdown") Dropdown
+					select(id="dropdown" name="dropdown")
+						option Please select...
+						option(value="Option 1") Option 1
+						option(value="Option 2") Option 2
+						option(value="Option 3") Option 3
+					i.bi_interface-bottom
 
-		label(for="textarea") Textarea
-		textarea(id="textarea" name="textarea" placeholder="Anything else?")
+			.col-xs-12
+				label(for="textarea") Textarea
+					textarea(id="textarea" name="textarea" placeholder="Anything else?")
+
+			.col-xs-12
+				label Radio Inputs
+					label.label--radio-checkbox(for='radio-example-1') WeWork Chelsea
+						input#radio-example-1(type='radio', name='radio-example', value='wework-chelsea')
+					label.label--radio-checkbox(for='radio-example-2') WeWork Tower 49
+						input#radio-example-2(type='radio', name='radio-example', value='wework-tower-49')
+					label.label--radio-checkbox(for='radio-example-3') WeWork South Willamsburg
+						input#radio-example-3(type='radio', name='radio-example', value='wework-south-williamsburg')
+
+			.col-xs-12
+				label Checkboxes
+					label.label--radio-checkbox(for='checkbox-example-1') WeWork Chelsea
+						input#checkbox-example-1(type='checkbox', name='checkbox-example', value='wework-chelsea')
+					label.label--radio-checkbox(for='checkbox-example-2') WeWork Tower 49
+						input#checkbox-example-2(type='checkbox', name='checkbox-example', value='wework-tower-49')
+					label.label--radio-checkbox(for='checkbox-example-3') WeWork South Willamsburg
+						input#checkbox-example-3(type='checkbox', name='checkbox-example', value='wework-south-williamsburg')
