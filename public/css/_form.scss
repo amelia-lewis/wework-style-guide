@@ -1,0 +1,27 @@
+// ---------------
+// Form
+// ---------------
+
+.form-container-outer {
+	@extend .responsive-block;
+	position: relative;
+	background: $black-50 no-repeat center;
+	background-size: cover;
+	z-index: 1;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba($black-50, 0.7);
+		z-index: -1;
+	}
+
+	.form-container-inner {
+		background: $white;
+		padding: 50px;
+	}
+}
