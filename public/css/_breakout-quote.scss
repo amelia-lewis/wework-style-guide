@@ -7,19 +7,19 @@
 	
 	.quote-bg {
 		position: relative;
-		padding: 20px 0;
+		padding: $spacer-xs 0;
 		z-index: 1;
 
 		@media (min-width: $screen-sm-min) {
-			padding: 30px 0;
+			padding: $spacer-sm 0;
 		}
 
 		@media (min-width: $screen-md-min) {
-			padding: 40px 0;
+			padding: $spacer-md 0;
 		}
 
 		@media (min-width: $screen-lg-min) {
-			padding: 50px 0;
+			padding: $spacer-lg 0;
 		}
 
 		&:before {

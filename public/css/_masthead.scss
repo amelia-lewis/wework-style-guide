@@ -19,18 +19,18 @@
 	}
 
 	.image-caption {
-		margin-top: 20px;
+		margin-top: $spacer-xs;
 
 		@media (min-width: $screen-sm-min) {
-			margin-top: 30px;
+			margin-top: $spacer-sm;
 		}
 
 		@media (min-width: $screen-md-min) {
-			margin-top: 40px;
+			margin-top: $spacer-md;
 		}
 
 		@media (min-width: $screen-lg-min) {
-			margin-top: 50px;
+			margin-top: $spacer-lg;
 		}
 	}
 }

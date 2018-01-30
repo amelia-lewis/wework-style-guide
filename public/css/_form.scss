@@ -30,7 +30,7 @@
 
 	.form-container-inner {
 		background: $white;
-		padding: 50px;
+		padding: $spacer-lg;
 
 		@media (max-width: $screen-sm-max) {
 			padding: 0;

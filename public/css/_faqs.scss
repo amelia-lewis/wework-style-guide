@@ -6,7 +6,7 @@
 .faq-question {
 	@extend .block-white;
 	border: 1px solid $bg-5;
-	padding: 20px;
+	padding: $spacer-xs;
 
 	h4 {
 		@extend .title-3;
@@ -17,6 +17,6 @@
 	}
 
 	&:not(:last-of-type) {
-		margin-bottom: 20px;
+		margin-bottom: $spacer-xs;
 	}
 }
