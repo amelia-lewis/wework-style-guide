@@ -1,0 +1,50 @@
+// ---------------
+// Image Collage
+// ---------------
+
+.image-collage {
+	position: relative;
+
+	.image-caption {
+		.image {
+			height: 300px !important;
+
+			@media (min-width: $screen-md-min) {
+				height: 400px !important;
+			}
+
+			@media (min-width: $screen-lg-min) {
+				height: 500px !important;
+			}
+		}
+	}
+
+	.image-caption:not(:first-of-type) {
+		width: 50%;
+		display: none;
+
+		@media (min-width: $screen-md-min) {
+			display: inline-block;
+		}
+	}
+	
+	h2 {
+		@extend .impact-1;
+		color: $white;
+		position: absolute;
+		top: calc(50% - 40px);
+		left: 20px;
+		width: 75%;
+		margin: 0;
+		
+		@media (min-width: $screen-md-min) {
+			top: calc(50% - 100px);
+			left: calc(50% - 100px);
+			width: 50%;
+		}
+
+		@media (min-width: $screen-lg-min) {
+			width: 40%;
+		}
+	}
+}
