@@ -7,7 +7,8 @@
 
 	.image {
 		background: $black-50 no-repeat center / cover;
-		width: 100%;
+		width: calc(100% + 40px);
+		margin-left: -20px;
 		height: 200px;
 			
 		@media (min-width: $screen-sm-min) {
@@ -16,6 +17,8 @@
 
 		@media (min-width: $screen-md-min) {
 			height: 400px;
+			width: calc(100% + 400px);
+			margin-left: -200px;
 		}
 
 		@media (min-width: $screen-lg-min) {
@@ -28,6 +31,8 @@
 		background: $black-50;
 		color: $white;
 		padding: 10px 20px;
+		width: calc(100% + 40px);
+		margin-left: -20px;
 
 		p {
 			@extend .copy-4;
@@ -43,7 +48,9 @@
 			position: absolute;
 			bottom: 0;
 			left: 0;
+			width: auto;
 			padding: 10px 60px 10px 30px;
+			margin: 0;
 		}
 	}
 }
