@@ -1,0 +1,15 @@
+include ../../partials/breadcrumbs.jade
+include ../../partials/logo-grid.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/style-guide", title: "Style Guide"}, {link: "/style-guide/logo-grid", title: "Logo Grid"})
+
+.responsive-block
+	.content-wrap
+		h2.title-1 Logo Grid
+		+logo-grid("Companies We’ve Worked With", "Today’s top brands come to us for inspiring, cost-effective workspace at scale.", 
+							{img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2000px-Microsoft_logo_%282012%29.svg.png", type: "horizontal"},
+							{img: "https://synaptik.co/wp-content/uploads/2017/10/facebook-logo.png", type: "horizontal"},
+							{img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/HSBC.svg/2000px-HSBC.svg.png", type: "horizontal"},
+							{img: "https://static.brandfolder.com/salesforce/logo/salesforce-primary-logo.png", type: "stacked"},
+							{img: "https://s-media-cache-ak0.pinimg.com/originals/0f/94/6d/0f946df6d767c5f3aa2664d2f4859ea2.png", type: "stacked"},
+							{img: "http://logos-download.com/wp-content/uploads/2016/10/Deloitte_logo_black.png", type: "horizontal"})

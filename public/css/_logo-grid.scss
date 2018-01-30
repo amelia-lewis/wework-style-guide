@@ -1,0 +1,50 @@
+// ---------------
+// Logo Grid
+// ---------------
+
+.logo-grid {
+	@extend .responsive-block;
+	
+	h2 {
+		@extend .title-2;
+	}
+
+	p {
+		@extend .copy-2;
+		margin: 0 0 $spacer-xs;
+
+		@media (min-width: $screen-sm-min) {
+			margin: 0 0 $spacer-sm;
+		}
+
+		@media (min-width: $screen-md-min) {
+			margin: 0 0 $spacer-md;
+		}
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 0 $spacer-lg;
+		}
+	}
+
+	.logo-block {
+		background: $bg-1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100px;
+		margin: 0 0 20px;
+
+		img {
+			max-width: 160px;
+			display: block;
+
+			&.horizontal {
+				max-height: 24px;
+			}
+
+			&.stacked {
+				max-height: 50px;
+			}
+		}
+	}
+}
