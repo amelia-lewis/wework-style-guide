@@ -20,8 +20,20 @@
 		z-index: -1;
 	}
 
+	@media (max-width: $screen-sm-max) {
+		background: none !important;
+
+		&:after {
+			display: none;
+		}
+	}
+
 	.form-container-inner {
 		background: $white;
 		padding: 50px;
+
+		@media (max-width: $screen-sm-max) {
+			padding: 0;
+		}
 	}
 }
