@@ -1,0 +1,20 @@
+mixin image-gallery(headline, copy, img1, caption1, img2, caption2)
+	.image-gallery
+		.row
+			.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+				h2= headline
+				p= copy
+		
+		.row
+			.col-xs-12.col-md-10
+				.image(style="background-image: url('" + img1 + "');")
+				.row
+					.col-xs-10
+						.caption= caption1
+					.col-xs-2
+						.arrows
+							i.bi_interface-arrow-left
+							i.bi_interface-arrow-right
+
+			.col-xs-12.col-md-2
+				.image(style="background-image: url('" + img2 + "');")

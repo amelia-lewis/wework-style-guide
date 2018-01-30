@@ -1,0 +1,9 @@
+include ../../partials/breadcrumbs.jade
+include ../../partials/image-gallery.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/style-guide", title: "Style Guide"}, {link: "/style-guide/image-gallery", title: "Image Gallery"})
+
+.responsive-block
+	.content-wrap
+		h2.title-1 Logo Grid
+		+image-gallery("Go Beyond the Boardroom", "WeWork members choose from a variety of unique spaces. From sun-lit terraces and whiteboard-walled rooms to soundproof phone booths and cozy conversation nooks, there’s a space for any kind of chat. View examples of our beautiful conference rooms below.", "https://locations-api-production.imgix.net/locations/image/e053bdc0-37fb-11e6-8bc6-0a488af3e541/berkeley-office-space-30.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=1000&h=500", "Get inspired by the creative and unique interior design elements of each space.", "https://locations-api-production.imgix.net/locations/image/339edd02-5377-11e6-8421-0a488af3e541/ibn-gabirol-conference-room-27.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=1000&h=500", "Conference Room")

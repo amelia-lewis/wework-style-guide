@@ -1,0 +1,62 @@
+// ---------------
+// Image Gallery
+// ---------------
+
+.image-gallery {
+	@extend .responsive-block;
+
+	h2 {
+		@extend .title-2;
+	}
+
+	p {
+		@extend .copy-2;
+		margin: 0 0 $spacer-xs;
+
+		@media (min-width: $screen-sm-min) {
+			margin: 0 0 $spacer-sm;
+		}
+
+		@media (min-width: $screen-md-min) {
+			margin: 0 0 $spacer-md;
+		}
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 0 $spacer-lg;
+		}
+	}
+	
+	.image {
+		background: $black-50 no-repeat center / cover;
+		width: 100%;
+		height: 200px;
+		margin: 0 0 10px;
+			
+		@media (min-width: $screen-sm-min) {
+			height: 300px;
+		}
+
+		@media (min-width: $screen-md-min) {
+			height: 400px;
+		}
+
+		@media (min-width: $screen-lg-min) {
+			height: 500px;
+		}
+	}
+
+	.caption {
+		@extend .copy-3;
+		@extend .text-medium;
+	}
+
+	.arrows {
+		text-align: right;
+	}
+
+	.col-xs-12.col-md-2:last-of-type {
+		.image {
+			width: calc(100% + 200px);
+		}
+	}
+}
