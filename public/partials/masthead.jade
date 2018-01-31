@@ -10,20 +10,8 @@ mixin masthead-1(headline, copy, img, caption1, caption2)
 
 			+image-caption(img, caption1, caption2)
 
-mixin masthead-2(headline, copy, img)
+mixin masthead-2(headline, copy, img1, img2)
 	.masthead-2
-		.content-wrap
-			.row.bottom-md
-				.col-xs-12.col-md-6
-					.image(style="background-image: url('" + img + "');")
-
-				.col-xs-12.col-md-5.col-md-offset-1
-					.text-container
-						h1= headline
-						p= copy
-
-mixin masthead-3(headline, copy, img1, img2)
-	.masthead-3
 		.content-wrap
 			.row
 				.col-xs-12.col-md-1.col-lg-2
@@ -36,3 +24,15 @@ mixin masthead-3(headline, copy, img1, img2)
 
 				.col-xs-12.col-md-5.col-lg-5
 					.image-2(style="background-image: url('" + img2 + "');")
+
+mixin masthead-4(headline, copy, img)
+	.masthead-4
+		.content-wrap
+			.row.bottom-md
+				.col-xs-12.col-md-6
+					.image(style="background-image: url('" + img + "');")
+
+				.col-xs-12.col-md-5.col-md-offset-1
+					.text-container
+						h1= headline
+						p= copy
