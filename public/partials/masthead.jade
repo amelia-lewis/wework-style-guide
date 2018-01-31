@@ -24,11 +24,15 @@ mixin masthead-2(headline, copy, img)
 
 mixin masthead-3(headline, copy, img1, img2)
 	.masthead-3
-		.image-1(style="background-image: url('" + img1 + "');")
-		.image-2(style="background-image: url('" + img2 + "');")
-
 		.content-wrap
 			.row
-				.col-xs-12.col-md-6.col-md-offset-1.col-lg-5.col-lg-offset-2
-					h1= headline
-					p= copy
+				.col-xs-12.col-md-1.col-lg-2
+					.image-1(style="background-image: url('" + img1 + "');")
+
+				.col-xs-12.col-md-6.col-lg-5
+					.text-container
+						h1= headline
+						p= copy
+
+				.col-xs-12.col-md-5.col-lg-5
+					.image-2(style="background-image: url('" + img2 + "');")
