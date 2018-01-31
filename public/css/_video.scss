@@ -1,0 +1,43 @@
+// ---------------
+// Video
+// ---------------
+
+.video {
+	@extend .responsive-block;
+
+	h2 {
+		@extend .title-2;
+	}
+
+	p {
+		@extend .copy-2;
+		margin: 0 0 $spacer-xs;
+
+		@media (min-width: $screen-sm-min) {
+			margin: 0 0 $spacer-sm;
+		}
+
+		@media (min-width: $screen-md-min) {
+			margin: 0 0 $spacer-md;
+		}
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 0 $spacer-lg;
+		}
+	}
+
+	.video-wrapper {
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 25px;
+		height: 0;
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

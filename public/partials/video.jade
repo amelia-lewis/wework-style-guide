@@ -1,0 +1,7 @@
+mixin video(headline, copy, videoId)
+	.video
+		.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+			h2= headline
+			p= copy
+			.video-wrapper
+				iframe(width='560', height='315', src='https://www.youtube.com/embed/' + videoId + '?rel=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
