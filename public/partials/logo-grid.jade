@@ -1,7 +1,10 @@
 mixin logo-grid(headline, copy, ...logos)
 	.logo-grid
-		h2= headline
-		p= copy
+		.row
+			.col-xs-12.col-md-8
+				h2= headline
+				p= copy
+		
 		.row
 			each logo in logos
 				.col-xs-12.col-sm-6.col-md-4: .logo-block: img(class=logo.type src=logo.img)

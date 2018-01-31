@@ -1,0 +1,21 @@
+include ../../partials/breadcrumbs.jade
+include ../../partials/amenity-grid.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/style-guide", title: "Style Guide"}, {link: "/style-guide/amenity-grid", title: "Amenity Grid"})
+
+.responsive-block
+	.content-wrap
+		h2.title-1 Amenity Grid
+		+amenity-grid("Let us Handle That", "From front-desk service to fresh fruit water, utilities & security to employee events, our custom buildouts include all-inclusive amenities that are cost-effective—and meaningful.", 
+							{icon: "web-internet-a", name: "Super-Fast Internet"},
+							{icon: "doc-print-a", name: "Business-Class Printers"},
+							{icon: "time-clock-c", name: "Daily Cleaning"},
+							{icon: "beverage-tea-a", name: "Micro-Roasted Coffee"},
+							{icon: "com-envelope", name: "Mail & Package Handling"},
+							{icon: "user-single-a-group", name: "IT Support"},
+							{icon: "time-calendar-a", name: "24/7 Building Access"},
+							{icon: "misc-globe", name: "Global Network"},
+							{icon: "doc-attachment", name: "Office Supplies"},
+							{icon: "beverage-beer", name: "Craft on Draft"},
+							{icon: "com-phone", name: "Private Phone Booths"},
+							{icon: "transport-bicycle", name: "Bike Storage"})
