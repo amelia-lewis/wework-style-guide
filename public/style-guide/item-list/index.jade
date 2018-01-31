@@ -1,0 +1,17 @@
+include ../../partials/breadcrumbs.jade
+include ../../partials/item-list.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/style-guide", title: "Style Guide"}, {link: "/style-guide/item-list", title: "Item List"})
+
+.responsive-block
+	.content-wrap
+		h2.title-1 Item List
+
+		.item-list
+			.row
+				.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+					h2.title-2 WeWork Member Network App
+					+item-list-item("Social feed", "Get updates from other WeWork members and announcements from Community Managers in your building.")
+					+item-list-item("Book space", "Reserve conference rooms or workspace at any location with credits.")
+					+item-list-item("RSVP to events", "Discover and RSVP to events in your building or at any nearby WeWork location.")
+					+item-list-item("Job board", "Post or respond to job listings and find work within our network.")

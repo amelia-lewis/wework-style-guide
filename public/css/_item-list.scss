@@ -1,0 +1,33 @@
+// ---------------
+// Item List
+// ---------------
+
+.item-list {
+	@extend .responsive-block;
+
+	h2 {
+		margin: 0 0 $spacer-xs;
+
+		@media (min-width: $screen-sm-min) {
+			margin: 0 0 $spacer-sm;
+		}
+	}
+
+	.item-list-item {
+		padding: 15px 0;
+		border-top: 1px solid $bg-5;
+
+		h4 {
+			@extend .title-3;
+		}
+
+		p {
+			@extend .copy-2;
+			margin: 0;
+		}
+
+		&:last-of-type {
+			border-bottom: 1px solid $bg-5;
+		}
+	}
+}
