@@ -25,6 +25,18 @@ mixin masthead-2(headline, copy, img1, img2)
 				.col-xs-12.col-md-5.col-lg-5
 					.image-2(style="background-image: url('" + img2 + "');")
 
+mixin masthead-3(headline, copy, img, caption1, caption2, buttonCopy, buttonLink)
+	.masthead-3
+		.content-wrap
+			.row
+				.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+					h1= headline
+					p= copy
+					if buttonCopy
+						a.btn.btn--primary-action(href=buttonLink)= buttonCopy
+
+			+image-caption(img, caption1, caption2)
+
 mixin masthead-4(headline, copy, img)
 	.masthead-4
 		.content-wrap
