@@ -1,0 +1,17 @@
+include ../../partials/breadcrumbs.jade
+include ../../partials/testimonial.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/style-guide", title: "Style Guide"}, {link: "/style-guide/testimonials", title: "Testimonials"})
+
+.content-wrap
+	.responsive-block
+		h2.title-1 Testimonials
+		.row.testimonial-container
+			.col-xs-12.col-sm-6.col-md-4.col-lg-3
+				+testimonial("https://images.contentful.com/6vy33zo2mgy3/7foqG1Cvn2yC2AKmaQgIe/feb3bb727fefae4646b9ad2a280384d4/IMG_1163.jpg", "You can feel the drive and tenacity that comes from this underdog culture.", "Celeste Glavin")
+			.col-xs-12.col-sm-6.col-md-4.col-lg-3
+				+testimonial("https://images.contentful.com/6vy33zo2mgy3/3FoRh6XJ5uqGYYAOGMa8ia/ce44e7265be7351135736e6c7cf82160/E3EC227E-A33F-4409-8EC7-830E277B2B37.jpg", "We care both about quality work and quality people.", "Hanjie Ji")
+			.col-xs-12.col-sm-6.col-md-4.col-lg-3
+				+testimonial("https://images.contentful.com/6vy33zo2mgy3/yaYwFpThy8Q8G6oq6CAgy/ba95dd4cbba16e188dc88d5264e72438/defrancesco_deanna.web.jpg", "Seems impossible, but somehow we do it.", "Deanna DeFrancesco")
+			.col-xs-12.col-sm-6.col-md-4.col-lg-3
+				+testimonial("https://images.contentful.com/6vy33zo2mgy3/4l5BBW08NOuieQ0UC6qKc0/058b1e998b529ff40b58a93b9ff6b48e/AFritsch_01-sm.jpg", "We’re super passionate, driven, self-motivated team players.", "Aaron Fritsch")
