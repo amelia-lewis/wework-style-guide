@@ -1,0 +1,10 @@
+include ../../partials/breadcrumbs.jade
+include ../../partials/bottom-bar.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/style-guide", title: "Style Guide"}, {link: "/style-guide/bottom-bar", title: "Bottom Bar"})
+
+.responsive-block
+	.content-wrap
+		h2.title-1 Bottom Bar
+
+	+bottom-bar("See how our enterprise solutions can help your team", "Get in Touch", "/")
