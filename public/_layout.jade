@@ -14,11 +14,17 @@ html
 						a(href="/").header-logo
 							include partials/logo
 						ul.header-nav
-							li: a(href="") Locations
-							li: a(href="") Plans &amp; Pricing
-							li: a(href="") Enterprise
-							li: a(href="") Mission
+							li: a(href="/locations") Locations
+							li: a(href="/plans") Plans &amp; Pricing
+							li: a(href="/enterprise") Enterprise
+							li: a(href="/mission") Mission
 					.header-rhs
 						button.btn.btn--secondary-navigation Log In
 
 		!= yield
+
+		footer
+			.content-wrap
+				.row
+					.col-12
+						p.copy-1 Footer

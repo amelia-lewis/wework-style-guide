@@ -3,6 +3,7 @@
 @import "_blocks";
 
 @import "_header";
+@import "_footer";
 
 // Components
 @import "_text-styles";
@@ -29,6 +30,9 @@
 @import "_video";
 @import "_bottom-bar";
 @import "_amenity-grid";
+
+// Pages
+@import "pages/_homepage";
 
 
 // ------------------------------------------------------------------------------------------
@@ -68,5 +72,9 @@ hr {
   border: none;
   height: 1px;
   background: $bg-5;
-  margin: 40px 0;
+  margin: 10px 0;
+}
+
+.tight {
+  margin: 0;
 }

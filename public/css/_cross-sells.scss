@@ -33,6 +33,20 @@
 }
 
 .cross-sell-container {
+	margin: $spacer-xs 0 0;
+
+	@media (min-width: $screen-sm-min) {
+		margin: $spacer-sm 0 0;
+	}
+
+	@media (min-width: $screen-md-min) {
+		margin: $spacer-md 0 0;
+	}
+
+	@media (min-width: $screen-lg-min) {
+		margin: $spacer-lg 0 0;
+	}
+	
 	.col-xs-12.col-sm-6.col-md-4 {
 		&:nth-of-type(3), &:nth-of-type(2) {
 			display: none;

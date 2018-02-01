@@ -239,7 +239,7 @@
 				right: -200px;
 				bottom: -1 * $spacer-xs;
 				left: -1 * $spacer-md;
-				background: rgba(#FEE3D6, 0.5);
+				background: rgba($yellow-50, 0.2);
 				z-index: -1;
 
 				@media (min-width: $screen-md-min) {

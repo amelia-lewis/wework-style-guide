@@ -5,4 +5,5 @@ mixin case-study(logoImg, quote, avatarImg, name, title, buttonLink)
 		.avatar(style="background-image: url('" + avatarImg + "');")
 		p.name= name
 		p.title= title
-		a.btn.btn--tertiary-navigation(href=buttonLink) View Case Study
+		if buttonLink
+			a.btn.btn--tertiary-navigation(href=buttonLink) View Case Study

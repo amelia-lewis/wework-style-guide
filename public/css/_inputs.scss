@@ -168,6 +168,8 @@ input[type="checkbox"] {
 .toggle-group {
 	display: block;
 	margin: 5px 0 20px;
+	width: 100%;
+	display: flex;
 }
 
 .label--toggle {
@@ -179,6 +181,7 @@ input[type="checkbox"] {
 	text-align: center;
 	position: relative;
 	z-index: 1;
+	flex-grow: 1;
 
 	input[type="radio"] {
 		position: absolute;

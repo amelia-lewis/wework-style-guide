@@ -1,5 +1,7 @@
 include partials/masthead.jade
 include partials/image-text.jade
+include partials/case-study.jade
+include partials/logo-grid.jade
 
 +masthead-4("Where Businesses Thrive", "Whether you need a desk, office suite, or entire HQ, we create environments that increase productivity, innovation, and collaboration.", "https://locations-api-production.imgix.net/locations/image/4f6fd5d6-0899-11e7-9462-0a488af3e541/WeWork_Weihai-final-large-3.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=entropy&fit=crop&w=1800&h=800")
 
@@ -9,3 +11,56 @@ include partials/image-text.jade
 			.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
 				h2.title-1 Welcome to WeWork
 				p.copy-2 WeWork is a global network of workspaces where companies and people grow together. We transform buildings into dynamic environments for creativity, focus, and connection. More than just the best place to work, though, this is a movement toward humanizing work. We believe that CEOs can help each other, offices can use the comforts of home, and we can all look forward to Monday if we find real meaning in what we do.
+
+	hr
+
+	.responsive-block.homepage-building-search
+		.row
+			.col-xs-12.col-md-4
+				h2.title-2 Find Your Dream Workspace
+
+		.row
+			.col-xs-12.col-md-4
+				label(for="Location") Where You'd Like Workspace
+					input(type="text" id="location" name="location" placeholder="Where you are" value="New York City")
+
+			.col-xs-12.col-md-5
+				label.tight How Many Desks?
+					.toggle-group
+						label.label--toggle(for='toggle-example-1') 1–19
+							input#toggle-example-1(type='radio', name='toggle-example', value='1–19')
+						label.label--toggle(for='toggle-example-2') 20–99
+							input#toggle-example-2(type='radio', name='toggle-example', value='20–99')
+						label.label--toggle(for='toggle-example-3') 100–999
+							input#toggle-example-3(type='radio', name='toggle-example', value='100–999')
+						label.label--toggle(for='toggle-example-3') 1000+
+							input#toggle-example-3(type='radio', name='toggle-example', value='1000+')
+
+			.col-xs-12.col-md-3
+				button.btn.btn--primary-action.btn--block Search
+
+
+	hr
+
+	+small-image-text-left("Flexible Plans", "With month-to-month agreements, you can grow your office as your team grows, or start with just a desk and see where it takes you.", "See All Plans", "/plans", "https://cdn.wework.com/6vy33zo2mgy3/4scNP4DMC4YeWwe8aQuEg2/5e65194625b8274d23ab9650cc7b7526/20160128_HQ_Chelsea-23.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=800&h=auto", "WeWork Chelsea", "New York City, New York")
+	+small-image-text-right("Just-Right Locations", "Each location has its own unique vibe—find your ideal neighborhood, building features, and coworking scene.", "See All Locations", "/locations", "https://cdn.wework.com/6vy33zo2mgy3/24VUF5WFDa0U4iMo6IKiEk/4ad1d3285f78b88f4f2300aefcd59683/20160727_Kinzie_Chicago_-_Terrace-7.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=800&h=auto", "WeWork Kinzie", "Chicago, Illinois")
+
+	.responsive-block
+		h2.title-2 Our Members Tell it Like it is
+		.row.case-study-container
+			.col-xs-12.col-sm-6.col-md-4.col-lg-3
+				+case-study("https://assets.onestore.ms/cdnfiles/external/uhf/long/9a49a7e9d8e881327e81b9eb43dabc01de70a9bb/images/microsoft-gray.png", "My favorite thing about WeWork is the easy access to facilities and network of peers (online and at each location) who I can help or get help from!", "https://cdn.wework.com/6vy33zo2mgy3/6yHsYX685UIyAa20Cuaiso/61bb26d9f32a3d627b843011dff832d6/347af4756c9492b5105fc62bb57d5837c16482ea.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=200&h=200", "Ramon Ray", "Entrepreneur & Global Speaker", "")
+			.col-xs-12.col-sm-6.col-md-4.col-lg-3
+				+case-study("https://www-03.ibm.com/press/us/en/attachment/20190.wss?fileId=ATTACH_FILE2&fileName=ibmpos_blue.jpg", "I've scaled my organization, hosted successful events, and most importantly met lifelong friends all within the WeWork ecosystem.", "https://cdn.wework.com/6vy33zo2mgy3/2VlLcz61WoeuooiuUQoKO4/79f124efe5eb4664e37bf03f0127f5c5/584aca1a1f0095e616a944f5d809e966befeb20b.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=200&h=200", "Saeed Jabbar", "Founder of Inclusion", "")
+			.col-xs-12.col-sm-6.col-md-4.col-lg-3
+				+case-study("http://business.nasdaq.com/media/Nasdaqlogo_homepage_tcm5044-15630.png", "The most important thing is that all of the community has embedded a standard of trust. You breathe trust, and for developing business, it's a great plus!", "https://cdn.wework.com/6vy33zo2mgy3/1Pz5yaTfa0w64cGaskQGiu/47a3168b60cc3b1b22a30aa956dc46d2/eab5064fe16f031ecff614a3bbee6e41518b538a.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=200&h=200", "Fabricio González Antuña", "CEO of Dynamia", "")
+			.col-xs-12.col-sm-6.col-md-4.col-lg-3
+				+case-study("http://pluspng.com/img-png/airbnb-logo-png-is-airbnb-safe-what-the-homestay-app-does-to-make-hosts-and-guests-secure-in-their-use-780.png", "There's something empowering about working in a space where you are encouraged to create brilliant ideas that disrupt culture followed by the support of a team of people who want you to win.", "https://cdn.wework.com/6vy33zo2mgy3/7vOxHCxsBiGew8k4GGyIkC/38c1cdb7e6a42f84c82954e9beedac44/9b63722e548be0b72139fa68d62c63a837a6cdb0.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=200&h=200", "Rachel D. Wilson", "Entrepreneur & Creative Director", "")
+
+	+logo-grid("Companies We’ve Worked With", "Today’s top brands come to us for inspiring, cost-effective workspace at scale.", 
+						{img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2000px-Microsoft_logo_%282012%29.svg.png", type: "horizontal"},
+						{img: "https://synaptik.co/wp-content/uploads/2017/10/facebook-logo.png", type: "horizontal"},
+						{img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/HSBC.svg/2000px-HSBC.svg.png", type: "horizontal"},
+						{img: "https://static.brandfolder.com/salesforce/logo/salesforce-primary-logo.png", type: "stacked"},
+						{img: "https://s-media-cache-ak0.pinimg.com/originals/0f/94/6d/0f946df6d767c5f3aa2664d2f4859ea2.png", type: "stacked"},
+						{img: "http://logos-download.com/wp-content/uploads/2016/10/Deloitte_logo_black.png", type: "horizontal"})
