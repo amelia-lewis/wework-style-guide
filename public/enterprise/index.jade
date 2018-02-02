@@ -1,0 +1,55 @@
+include ../partials/breadcrumbs.jade
+include ../partials/masthead.jade
+include ../partials/image-text.jade
+include ../partials/plan-card.jade
+include ../partials/logo-grid.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/enterprise", title: "Enterprise"})
+
++masthead-1("The New Enterprise", "Empower your workforce to do what they love. We’re redefining the work experience by homing in on the heart of every business: people. Our suite of enterprise solutions has your workspace needs covered. Our team of real estate, design, construction, architecture and operations experts are creating environments that increase productivity, spur innovation, and encourage collaboration.", "https://cdn.wework.com/6vy33zo2mgy3/7rfnymzjxYo4yCM6iiekYA/e0aa99a49d72e528544e63ee9b6c122c/unspecified-10.jpeg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=2000&h=500", "WeWork Chelsea", "New York City, New York")
+
+.responsive-block
+	.content-wrap
+		.row.plan-card-container
+			.col-xs-12.col-md-6.col-lg-3: +plan-card("https://cdn.wework.com/6vy33zo2mgy3/2Fz0YETj4IOCAGoSy0iUGI/ed1e3bc43289a24a50b86d629eb6b603/rsz_global-access.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=600&h=200", "Global Access", "", "Activate your distributed team with WeWork memberships, giving them access to our global space portfolio, plus create customized touchdown spaces in your busiest locations.", "Learn More", "/enterprise/global-access", "")
+			.col-xs-12.col-md-6.col-lg-3: +plan-card("https://cdn.wework.com/6vy33zo2mgy3/1DNkeuB1Z24yE6EGAI664m/e46d39ed729f85b37be5d13b1a4dc3db/rsz_swing_space_1.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=600&h=200", "Swing Space", "", "WeWork’s flexible swing space solutions are as agile as you are, keeping up with your ever-changing needs and timelines as you upsize, resize or change locations.", "Learn More", "/enterprise/swing-space", "")
+			.col-xs-12.col-md-6.col-lg-3: +plan-card("https://cdn.wework.com/6vy33zo2mgy3/4qd0vJSCM80qqUyc4wQc24/77d16cd49298f9ed49a525c4698383c5/rsz_sat.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=600&h=200", "Satellite Offices", "", "With more than 160 locations worldwide, creating a satellite office with WeWork enables you to connect and energize your local and global teams.", "Learn More", "/enterprise/satellite-offices", "")
+			.col-xs-12.col-md-6.col-lg-3: +plan-card("https://cdn.wework.com/6vy33zo2mgy3/5y4vUGXrfUogAigWyWqQS8/a98afc215b5a67bd1231f5253b87b3ff/rsz_mixpanel-chelsea.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=600&h=200", "Custom HQ", "", "Make your dream workspace a reality. Our custom build approach fuses your unique brand and inimitable culture with WeWork’s signature design and pioneering technology.", "Learn More", "/enterprise/custom-hq", "")
+
+.responsive-block
+	.content-wrap
+		.row
+			.col-xs-12.col-md-8
+				h2.title-1 Space as a Service
+				p.copy-2 Today, large-scale corporations are leveraging an array of WeWork enterprise solutions. We provide a full-stack offering, from sourcing your real estate, to designing and building your workspace, and ultimately operating your office.
+		
+		.row
+			.col-xs-12.col-md-6.col-lg-3
+				.block-ver-sm: img(src="https://cdn.wework.com/6vy33zo2mgy3/6m575vy6UEk6asY0Aoy0gS/b1ec4b1c1298883c56a74c3f55c022f5/-flex-2x.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=200&h=1" width="100")
+				h3.title-3 Flex
+				p.copy-2 Global access to WeWork’s 160+ locations.
+			
+			.col-xs-12.col-md-6.col-lg-3
+				.block-ver-sm: img(src="https://cdn.wework.com/6vy33zo2mgy3/YpDmQ1RPMIQsmEiC6m4M8/7c2b91ecdf34ed9584fa02c878dfd754/-office-2x.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=200&h=1" width="100")
+				h3.title-3 Office
+				p.copy-2 Private offices, often used as swing spaces or satellite offices.
+			
+			.col-xs-12.col-md-6.col-lg-3
+				.block-ver-sm: img(src="https://cdn.wework.com/6vy33zo2mgy3/6zMCFJ61A4WscyqWUoCKIG/a068f167c9695bdd6a3b449f2c1d5874/-floor-2x.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=200&h=1" width="100")
+				h3.title-3 Floor
+				p.copy-2 Dedicated floors, ideal for teams who need a tailored space.
+			
+			.col-xs-12.col-md-6.col-lg-3
+				.block-ver-sm: img(src="https://cdn.wework.com/6vy33zo2mgy3/6OpihKTnpeSUgoEC0eqI0Q/c5c5be899d21fe817928e2ca8bca8e9d/-building-2x.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=200&h=1" width="100")
+				h3.title-3 Building
+				p.copy-2 An entire WeWork location, perfect to build your dream HQ.
+
++large-image-text("Custom and Standard", "Whether you’re looking for move-in ready offices or fully tailored spaces that embody your brand, our standard and custom solutions will take your workspace to the next level. Standard is a quick, move-in ready workspace that’s good to go from day one. Your teams will enjoy all of WeWork’s signature designs and amenities—ideal for swing spaces or satellite offices. Custom is a hands-on approach in creating a space that meets your specific business needs. From a dynamic “thinklab” for client brainstorms to a floor of production studios, our in-house teams of architects and designers will work with you for a one-of-a-kind layout.", "", "", "https://cdn.wework.com/6vy33zo2mgy3/59MqDdVQwE6w8C60WaWO8o/c6c84dcb4e398d5e0122c9871e4df264/20170405_Mass_Appeal_Office-20.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=1800&h=600", "Custom Mural for Mass Appeal", "New York City, New York")
+
++logo-grid("Enterprise Partners", "Today’s top brands come to us for inspiring, cost-effective workspace at scale.", 
+					{img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2000px-Microsoft_logo_%282012%29.svg.png", type: "horizontal"},
+					{img: "https://synaptik.co/wp-content/uploads/2017/10/facebook-logo.png", type: "horizontal"},
+					{img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/HSBC.svg/2000px-HSBC.svg.png", type: "horizontal"},
+					{img: "https://static.brandfolder.com/salesforce/logo/salesforce-primary-logo.png", type: "stacked"},
+					{img: "https://s-media-cache-ak0.pinimg.com/originals/0f/94/6d/0f946df6d767c5f3aa2664d2f4859ea2.png", type: "stacked"},
+					{img: "http://logos-download.com/wp-content/uploads/2016/10/Deloitte_logo_black.png", type: "horizontal"})
