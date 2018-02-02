@@ -1,0 +1,34 @@
+include ../partials/breadcrumbs.jade
+include ../partials/masthead.jade
+include ../partials/image-text.jade
+include ../partials/item-list.jade
+include ../partials/image-collage.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/mission", title: "Our Mission"})
+
++masthead-2("Our Mission", "Make a life, not just a living.", "https://d24wuq6o951i2g.cloudfront.net/img/events/id/247/2477700/assets/228.20934222_1848222478523136_7679827894252755131_o.jpg", "https://cdn.wework.com/6vy33zo2mgy3/2SQ5SogWsUmOWimeQGKqCK/c17aca967d27f8c1a3c1fe73f55e91fa/plan-header-we-2.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=2000&h=1000")
+
+.responsive-block
+	.content-wrap
+		.row
+			.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+				h2.title-1 Our Story
+				p.copy-2 When we started WeWork in 2010, we wanted to build more than beautiful, shared office spaces. We wanted to build a community. A place you join as an individual, 'me', but where you become part of a greater 'we'. A place where we’re redefining success measured by personal fulfillment, not just the bottom line. Community is our catalyst.
+
+	
++image-collage("Create Your Life's Work", "https://cdn.wework.com/6vy33zo2mgy3/6GqoXBT5ssiE84SE6QW8ui/2a45234814e13f97dcd32feef7e142b4/mission-comm-T.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=1600&h=600", "Founders", "Miguel McKelvey, Adam Neumann, Rebekah Neumann", "https://cdn.wework.com/6vy33zo2mgy3/4NsqPjdaJG2WcWgwGQ6ka6/51dd30d8525fab81ae95141a44d4dbe6/summercamp-mission-yoga.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=800&h=600", "Summer Camp 2015", "Annual Member and Employee Retreat in the Adirondacks", "https://cdn.wework.com/6vy33zo2mgy3/Elq3rxqazYOsuUisSaAUk/5b2105a609a8b254e8e5baf48383ceee/mission-comm-R.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=800&h=600", "Global Summit 2016", "All-hands employee gathering")
+
+.item-list
+	.content-wrap
+		.row
+			.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+				h2.title-1 Our Values
+				p.copy-2 Our values set the foundation for the work we do. These aren’t just buzzwords. Regardless of what department we’re in, they’re the guiding force that creates our company culture. They keep us on the same page. They keep us honest. As a team, it’s our job to use these values to elevate our members, helping them achieve more and be better as a part of our community.
+				+item-list-item("Inspired", "We do what we love and are connected to something greater than ourselves.")
+				+item-list-item("Entrepreneurial", "We are creators, leaders, and self-starters. We try new things, we challenge convention, and we’re not afraid to fail.")
+				+item-list-item("Authentic", "We are genuine to our brand, mission, and values. We're not perfect, and we don't pretend to be. We are always honest and as transparent as we can be.")
+				+item-list-item("Tenacious", "We never settle. We get shit done and we get it done well. Be persistent and knock down walls–literally if you have to. You have our permission.")
+				+item-list-item("Grateful", "We are grateful for each other, our members, and to be part of this movement. We don't take success for granted. We’re happy to be alive.")
+				+item-list-item("Together", "We are in this together. This is a team effort. We always look out for one another. We have empathy, we know we're all human, and know we can’t do any of this alone.")
+
++small-image-text-right("Our Team", "Our mission doesn’t end with the small businesses and entrepreneurs that call us home. We believe in empowering our team to create their own life's work. We move fast and we challenge each other, but we look after each other and care about our culture, which makes working here extremely rewarding. There's a lot of work left for us to do, and we couldn't do it without a single member of our team.", "See Open Positions", "/careers", "https://cdn.wework.com/6vy33zo2mgy3/2mEzPZPwyI0SAimMk8SG6S/75ee80939bb886b1236accbbd1d964af/mission-video-image.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=1&h=1", "WeWork Summer Camp 2015", "The Adirondaks, New York")

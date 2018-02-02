@@ -25,6 +25,19 @@
 
 		@media (min-width: $screen-md-min) {
 			display: inline-block;
+
+			&:nth-of-type(2) {
+				.image {
+					width: calc(100% + 200px);
+				}
+			}
+
+			&:nth-of-type(3) {
+				.image {
+					width: calc(100% + 200px);
+					margin: 0;
+				}
+			}
 		}
 	}
 	

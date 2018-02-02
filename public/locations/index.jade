@@ -5,79 +5,81 @@ include ../partials/cross-sell.jade
 
 +breadcrumbs({link: "/", title: "Home"}, {link: "/locations", title: "All Locations"})
 
-.content-wrap
-	+masthead-2("All Locations", "287 Office Locations · 59 Cities", "https://cdn.wework.com/6vy33zo2mgy3/3PYfigapby6GySkWmCiw0U/584a41ca2c2ec680ddcd4bcf550773f9/c643b8a57d10f74b5c39bee4ec4e27056e20784e.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=400&h=400", "https://cdn.wework.com/6vy33zo2mgy3/2aojdcZgXWW2CiqqWcoIAu/0c090e6bbece9d41c49ad7e64ba1099c/869bbe964795339540aea2f1bdd8b359.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=1000&h=500")
 
-	.responsive-block
-		.row
-			.col-xs-12.col-md-8.col-lg-4
++masthead-2("All Locations", "287 Office Locations · 59 Cities", "https://cdn.wework.com/6vy33zo2mgy3/3PYfigapby6GySkWmCiw0U/584a41ca2c2ec680ddcd4bcf550773f9/c643b8a57d10f74b5c39bee4ec4e27056e20784e.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=400&h=400", "https://cdn.wework.com/6vy33zo2mgy3/2aojdcZgXWW2CiqqWcoIAu/0c090e6bbece9d41c49ad7e64ba1099c/869bbe964795339540aea2f1bdd8b359.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=1000&h=500")
+
+.responsive-block
+	.content-wrap
+		.location-list
+			.location-list-country
 				h3.title-3 United States
-				.row
-					.col-xs-6
-						ul.bulleted-list.bulleted-link-list
-							li: a(href="/locations/atlanta") Atlanta
-							li: a(href="/locations/austin") Austin
-							li: a(href="/locations/boston") Boston
-							li: a(href="/locations/charlotte") Charlotte
-							li: a(href="/locations/chicago") Chicago
-							li: a(href="/locations/dallas-fort-worth") Dallas - Fort Worth
-							li: a(href="/locations/denver") Denver
-							li: a(href="/locations/detroit") Detroit
-							li: a(href="/locations/houston") Houston
-							li: a(href="/locations/kansas-city") Kansas City
-							li: a(href="/locations/los") Los Angeles
-							li: a(href="/locations/miami") Miami
+				ul.bulleted-list.bulleted-link-list
+					li: a(href="/locations/atlanta") Atlanta
+					li: a(href="/locations/austin") Austin
+					li: a(href="/locations/boston") Boston
+					li: a(href="/locations/charlotte") Charlotte
+					li: a(href="/locations/chicago") Chicago
+					li: a(href="/locations/dallas-fort-worth") Dallas - Fort Worth
+					li: a(href="/locations/denver") Denver
+					li: a(href="/locations/detroit") Detroit
+					li: a(href="/locations/houston") Houston
+					li: a(href="/locations/kansas-city") Kansas City
+					li: a(href="/locations/los") Los Angeles
+					li: a(href="/locations/miami") Miami
+					li: a(href="/locations/minneapolis") Minneapolis
+					li: a(href="/locations/nashville") Nashville
+					li: a(href="/locations/new-york-city") New York City
+					li: a(href="/locations/orange-county") Orange County
+					li: a(href="/locations/philadelphia") Philadelphia
+					li: a(href="/locations/portland") Portland
+					li: a(href="/locations/raleigh-durham") Raleigh-Durham
+					li: a(href="/locations/sf-bay-area") SF Bay Area
+					li: a(href="/locations/san") San Diego
+					li: a(href="/locations/seattle") Seattle
+					li: a(href="/locations/washington-dc") Washington, D.C.
 
-					.col-xs-6
-						ul.bulleted-list.bulleted-link-list
-							li: a(href="/locations/minneapolis") Minneapolis
-							li: a(href="/locations/nashville") Nashville
-							li: a(href="/locations/new-york-city") New York City
-							li: a(href="/locations/orange-county") Orange County
-							li: a(href="/locations/philadelphia") Philadelphia
-							li: a(href="/locations/portland") Portland
-							li: a(href="/locations/raleigh-durham") Raleigh-Durham
-							li: a(href="/locations/sf-bay-area") SF Bay Area
-							li: a(href="/locations/san") San Diego
-							li: a(href="/locations/seattle") Seattle
-							li: a(href="/locations/washington-dc") Washington, D.C.
-
-			.col-xs-6.col-md-4.col-lg-2
+			.location-list-country
 				h3.title-3 Argentina
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/buenos-aires") Buenos Aires
 
+			.location-list-country
 				h3.title-3 Australia
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/melbourne") Melbourne
 					li: a(href="/locations/sydney") Sydney
 
+			.location-list-country
 				h3.title-3 Brazil
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/rio-de-janeiro") Rio de Janeiro
 					li: a(href="/locations/sao-paulo") São Paulo
 
+			.location-list-country
 				h3.title-3 Canada
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/montreal") Montreal
 					li: a(href="/locations/toronto") Toronto
 					li: a(href="/locations/vancouver") Vancouver
 
+			.location-list-country
 				h3.title-3 China
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/beijing") Beijing
 					li: a(href="/locations/hong-kong") Hong Kong
 					li: a(href="/locations/shanghai") Shanghai
 
-			.col-xs-6.col-md-4.col-lg-2
+			.location-list-country
 				h3.title-3 Colombia
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/bogota") Bogotá
 
+			.location-list-country
 				h3.title-3 France
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/paris") Paris
 
+			.location-list-country
 				h3.title-3 Germany
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/berlin") Berlin
@@ -85,17 +87,19 @@ include ../partials/cross-sell.jade
 					li: a(href="/locations/hamburg") Hamburg
 					li: a(href="/locations/munich") Munich
 
+			.location-list-country
 				h3.title-3 India
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/bengaluru") Bengaluru
 					li: a(href="/locations/delhi-ncr") Delhi NCR
 					li: a(href="/locations/mumbai") Mumbai
 
+			.location-list-country
 				h3.title-3 Ireland
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/dublin") Dublin
 
-			.col-xs-6.col-md-4.col-lg-2
+			.location-list-country
 				h3.title-3 Israel
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/be-er-sheva") Be'er Sheva
@@ -104,46 +108,54 @@ include ../partials/cross-sell.jade
 					li: a(href="/locations/jerusalem") Jerusalem
 					li: a(href="/locations/tel-aviv") Tel Aviv
 
+			.location-list-country
 				h3.title-3 Japan
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/tokyo") Tokyo
 
+			.location-list-country
 				h3.title-3 Mexico City
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/mexico-city") Mexico City
 
+			.location-list-country
 				h3.title-3 Netherlands
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/amsterdam") Amsterdam
 
+			.location-list-country
 				h3.title-3 Peru
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/lima") Lima
 
-			.col-xs-6.col-md-4.col-lg-2
+			.location-list-country
 				h3.title-3 Singapore
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/singapore") Singapore
 
+			.location-list-country
 				h3.title-3 South Korea
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/seoul") Seoul
 
+			.location-list-country
 				h3.title-3 Spain
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/barcelona") Barcelona
 					li: a(href="/locations/madric") Madric
 
+			.location-list-country
 				h3.title-3 United Kingdom
 				ul.bulleted-list.bulleted-link-list
 					li: a(href="/locations/london") London
 					li: a(href="/locations/manchester") Manchester
 
-	+small-image-text-right("The Most Inspiring Office Space", "WeWork members – from freelancers to startups to innovative enterprises – value inspiration and collaboration, and our coworking spaces are designed to foster these features. Grow your business or pursue your own creative projects in our beautiful shared office spaces, located in major cities across the world.", "", "", "https://cdn.wework.com/6vy33zo2mgy3/5uDhFC5iG4kWOmCEI6MOCc/f35ea0899790e7e525c3fae4291c19b9/20160406_Williamsburg_Common_Areas-1.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=1000&h=500", "WeWork Williamsburg", "New York City, New York")
++small-image-text-right("The Most Inspiring Office Space", "WeWork members – from freelancers to startups to innovative enterprises – value inspiration and collaboration, and our coworking spaces are designed to foster these features. Grow your business or pursue your own creative projects in our beautiful shared office spaces, located in major cities across the world.", "", "", "https://cdn.wework.com/6vy33zo2mgy3/5uDhFC5iG4kWOmCEI6MOCc/f35ea0899790e7e525c3fae4291c19b9/20160406_Williamsburg_Common_Areas-1.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=1000&h=500", "WeWork Williamsburg", "New York City, New York")
 
-	+large-image-text("Art-Infused Buildings", "Our spaces are built with custom murals to bring soul and cultural vibe to our spaces.", "", "", "https://cdn.wework.com/6vy33zo2mgy3/7bl2vJhDTUkU64gqMEICuK/e71bc0fe715161ef4872ecd8fcb098d8/his_airness.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=1200&h=600", "WeWork River North", "Chicago, Illinois")
++large-image-text("Art-Infused Buildings", "Our spaces are built with custom murals to bring soul and cultural vibe to our spaces.", "", "", "https://cdn.wework.com/6vy33zo2mgy3/7bl2vJhDTUkU64gqMEICuK/e71bc0fe715161ef4872ecd8fcb098d8/his_airness.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=1200&h=600", "WeWork River North", "Chicago, Illinois")
 
-	.responsive-block
+.responsive-block.block-bg-1
+	.content-wrap
 		h2.title-2 Work With Your Best Friend
 		p.copy-2 We love working alongside our furry friends. Many WeWork Office locations are pet friendly.
 		.row.cross-sell-container

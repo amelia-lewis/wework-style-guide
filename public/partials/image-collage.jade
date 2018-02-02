@@ -2,7 +2,8 @@ include image-caption.jade
 
 mixin image-collage(headline, img1, caption1a, caption1b, img2, caption2a, caption2b, img3, caption3a, caption3b)
 	.image-collage
-		+image-caption(img1, caption1a, caption1b)
-		+image-caption(img2, caption2a, caption2b)
-		+image-caption(img3, caption3a, caption3b)
-		h2= headline
+		.content-wrap
+			+image-caption(img1, caption1a, caption1b)
+			+image-caption(img2, caption2a, caption2b)
+			+image-caption(img3, caption3a, caption3b)
+			h2= headline

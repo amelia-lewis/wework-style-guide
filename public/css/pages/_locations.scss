@@ -1,0 +1,16 @@
+// ---------------
+// All Locations
+// ---------------
+
+.location-list {
+	column-count: 2;
+	column-gap: 30px;
+
+	@media (min-width: $screen-md-min) {
+		column-count: 4;
+	}
+
+	.location-list-country {
+		break-inside: avoid;
+	}
+}
