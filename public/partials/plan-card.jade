@@ -1,0 +1,13 @@
+mixin plan-card(img, title, pricing, description, buttonCopy, buttonLink, ...bestFor)
+	.plan-card
+		.image(style="background-image: url('" + img + "');")
+		.info-container
+			.text-container
+				h3= title
+				h4= pricing
+				p= description
+				br
+				h4 Best for:
+				each item in bestFor
+					p= item
+			a.btn.btn--primary-navigation(href=buttonLink)= buttonCopy

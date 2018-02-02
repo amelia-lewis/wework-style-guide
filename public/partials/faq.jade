@@ -1,4 +1,11 @@
-mixin faq-question(question, answer)
-	.faq-question
-		h4= question
-		p= answer
+mixin faq(headline, copy, ...faqs)
+	.faqs
+		.row
+			.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+				h2=headline
+				p= copy
+				
+				each faq in faqs
+					.faq-question
+						h4= faq.question
+						p= faq.answer

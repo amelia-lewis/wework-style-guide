@@ -15,23 +15,19 @@
 		@extend .copy-1;
 
 		&:last-of-type {
-			margin: 0;
-		}
-	}
+			margin: 0 0 $spacer-xs;
 
-	.image-caption {
-		margin-top: $spacer-xs;
+			@media (min-width: $screen-sm-min) {
+				margin: 0 0 $spacer-sm;
+			}
 
-		@media (min-width: $screen-sm-min) {
-			margin-top: $spacer-sm;
-		}
+			@media (min-width: $screen-md-min) {
+				margin: 0 0 $spacer-md;
+			}
 
-		@media (min-width: $screen-md-min) {
-			margin-top: $spacer-md;
-		}
-
-		@media (min-width: $screen-lg-min) {
-			margin-top: $spacer-lg;
+			@media (min-width: $screen-lg-min) {
+				margin: 0 0 $spacer-lg;
+			}
 		}
 	}
 }

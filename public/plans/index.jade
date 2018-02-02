@@ -1,0 +1,60 @@
+include ../partials/breadcrumbs.jade
+include ../partials/masthead.jade
+include ../partials/plan-card.jade
+include ../partials/amenity-grid.jade
+include ../partials/logo-grid.jade
+include ../partials/faq.jade
+include ../partials/image-text.jade
+include ../partials/breakout-image.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/plans", title: "Plans & Pricing"})
+
+.content-wrap
+	+masthead-2("Plans & Pricing", "", "https://cdn.wework.com/6vy33zo2mgy3/5gdp8MVABOquIka6i0C2Ea/daf0ccddb0b9f1ca2985dc266894897d/5_-_Metropool_Conference_Room.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=1000&h=500", "https://cdn.wework.com/6vy33zo2mgy3/6MbsHGn6I8sMCOeIkg0COs/fa31a7cd10729e8b6aa6a3f1ace5f573/3_-_5th_Ave_Kitchen.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=1000&h=500")
+
+	.responsive-block
+		h2.title-1 Membership Options
+		p.copy-2 Short-term agreements keep things flexible.
+
+		.row.plan-card-container
+			//- .col-xs-12.col-md-6.col-lg-3: +plan-card("https://cdn.wework.com/6vy33zo2mgy3/3Y5TkOwR20yEuSo02y88GK/77e4ebd2ca597fa4b093c4de11dc864a/customoffice.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=400&h=auto", "Custom Buildout", "Pricing Varies", "Whether full floor or building, we'll partner with you to design, build, and manage a tailor-made layout.", "View Plan", "plans/custom-buildout", "Companies of 50-500+", "Unique functionalities", "Flexible move-in date")
+			.col-xs-12.col-md-6.col-lg-3: +plan-card("https://cdn.wework.com/6vy33zo2mgy3/5R7Ygsxv1Yu4ssYkKUg6gQ/e79fea8a91bb93a60e86d62d770ddb29/standardoffice.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=400&h=auto", "Private Office", "Starting at $400/month", "Enclosed, lockable offices can accommodate teams of any size. Move-in ready, with desks, chairs, and filing cabinets.", "View Plan", "plans/private-office", "Companies of 1-100+", "Satellite and established teams", "Autonomy within community")
+			.col-xs-12.col-md-6.col-lg-3: +plan-card("https://cdn.wework.com/6vy33zo2mgy3/1Qsb37DxQYuyuW2KCog0S6/f6a70d7bdc901d34c2168ac4c90c2f13/dedicated_desk.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=400&h=auto", "Dedicated Desk", "Starting at $350/month", "A desk of your own in a shared space at one location. You’ll set up shop in the same spot each day in your building.", "View Plan", "plans/dedicated-desk", "Startups and small agencies", "Collaboration and growth", "Everyday use")
+			.col-xs-12.col-md-6.col-lg-3: +plan-card("https://cdn.wework.com/6vy33zo2mgy3/3yV9z1BhZ6QYYQM4M8y8OG/37380a76a3c2ac5e1bd8f5899a4c1e29/plans-hot_desk.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=400&h=auto", "Hot Desk", "Starting at $220/month", "Guaranteed workspace in a common area at one location. Just bring your laptop, pick an open seat, and get to work.", "View Plan", "plans/hot-desk", "Remote and part-time workers", "Client meetings", "More than a week per month")
+			.col-xs-12.col-md-6.col-lg-3: +plan-card("https://cdn.wework.com/6vy33zo2mgy3/3Y5TkOwR20yEuSo02y88GK/77e4ebd2ca597fa4b093c4de11dc864a/customoffice.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=400&h=auto", "On-Demand", "Starting at $45/month", "We Membership is our pay-as-you-go plan. Book a desk for a day or a conference room for an hour at any location.", "View Plan", "plans/hot-desk", "Remote and part-time workers", "Client meetings", "More than a week per month")
+
+	+breakout-image("Custom Buildout", "Whether full floor or building, we'll partner with you to design, build, and manage a tailor-made layout.", "Learn More", "/plans/custom-buildout", "https://cdn.wework.com/6vy33zo2mgy3/2foSQCtnycUOgAM28CyYW6/0844050dd7094923299584ee4b7a1f00/20170404_Mixpanel_Office-46__1_.jpg", "Custom HQ for Mixpanel", "New York City, New York")
+
+	+amenity-grid("Included Amenities", "You focus on growing your business, we take care of the rest.", 
+							{icon: "web-internet-a", name: "Super-Fast Internet"},
+							{icon: "doc-print-a", name: "Business-Class Printers"},
+							{icon: "time-clock-c", name: "Daily Cleaning"},
+							{icon: "beverage-tea-a", name: "Micro-Roasted Coffee"},
+							{icon: "com-envelope", name: "Mail & Package Handling"},
+							{icon: "user-single-a-group", name: "IT Support"},
+							{icon: "time-calendar-a", name: "24/7 Building Access"},
+							{icon: "misc-globe", name: "Global Network"},
+							{icon: "doc-attachment", name: "Office Supplies"},
+							{icon: "beverage-beer", name: "Craft on Draft"},
+							{icon: "com-phone", name: "Private Phone Booths"},
+							{icon: "transport-bicycle", name: "Bike Storage"})
+
+	+large-image-text("WeWork Enterprise", "Office solutions for forward-thinking corporations. From a 500-person HQ to a one-person satellite, WeWork creates a custom workplace experience that eliminates hassle, inspires employees, and fosters a culture that attracts top talent.", "Learn More", "/", "https://locations-api-production.imgix.net/locations/image/b2564206-37fd-11e6-8bc6-0a488af3e541/chelsea-coworking-23.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=entropy&fit=crop&w=1400&h=800", "WeWork Chelsea", "New York City, New York")
+
+	+logo-grid("Boost Your Business With our Service Store", "With access to 100+ special offers from top brands, the Service Store is included with every plan and here to help you focus on what matters most - creating your life's work.", 
+							{img: "https://static.brandfolder.com/slack/logo/slack-primary-logo.png", type: "horizontal"},
+							{img: "https://upload.wikimedia.org/wikipedia/commons/7/74/Office_365_logo.png", type: "horizontal"},
+							{img: "https://www.magnolia-cms.es/.imaging/stk/corporate2015/half/dam/customers/logos/Moo-logo.png/jcr:content/Moo-logo.png.png", type: "horizontal"},
+							{img: "https://www.bugcrowd.com/wp-content/uploads/2017/05/invision-logo-pink.png", type: "horizontal"},
+							{img: "https://static.brandfolder.com/salesforce/logo/salesforce-primary-logo.png", type: "stacked"},
+							{img: "http://pluspng.com/img-png/zendesk-vector-png-png-2599x600-zendesk-logo-transparent-background-2599.png", type: "horizontal"},
+							{img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AmazonWebservices_Logo.svg/2000px-AmazonWebservices_Logo.svg.png", type: "stacked"},
+							{img: "http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c525.png", type: "stacked"},
+							{img: "http://logos-download.com/wp-content/uploads/2016/11/Upwork_logo_logotype.png", type: "horizontal"})
+
+	+faq("Frequently Asked Questions", "Our team's always here to talk it out, just reach out by phone or email.", 
+			{question: "What are your building hours? When are you open?", answer: "WeWork staff are generally onsite at each location between 9 AM – 6 PM local time Monday through Friday at all locations. For members with Hot Desks, Dedicated Desks, or Private Offices, your location is accessible by keycard 24/7."},
+			{question: "Can I add mail and package handling?", answer: "Mail and package handling is included for Dedicated Desk and Private Office plans. Hot Desk and We Membership plans offer this service à la carte at most buildings. Reach out to the local Community team at your desired location to find out more."},
+			{question: "Am I able to transfer to another WeWork location?", answer: "If the building of your choice has availability, we’re happy to work with you to organize a seamless move."},
+			{question: "Does WeWork give referral rewards?", answer: "Yes! Our referral program rewards WeWork members with 10% of the monthly Membership Fee of the member who signs up for up to one year. This applies only to Dedicated Desk and Private Office membership plans. There are no limits to the number of referral rewards a member may earn."},
+			{question: "Are your memberships really month-to-month?", answer: "Yes! Our flexible month-to-month commitment provides you with the stability of an office along with the flexibility you need to grow your business. WeWork also offers longer term commitments; call us at +1 (888) 977-4184 or email us at joinus@wework.com for more information."})

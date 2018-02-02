@@ -8,7 +8,8 @@ mixin masthead-1(headline, copy, img, caption1, caption2)
 					h1= headline
 					p= copy
 
-			+image-caption(img, caption1, caption2)
+			if img
+				+image-caption(img, caption1, caption2)
 
 mixin masthead-2(headline, copy, img1, img2)
 	.masthead-2
@@ -35,7 +36,8 @@ mixin masthead-3(headline, copy, img, caption1, caption2, buttonCopy, buttonLink
 					if buttonCopy
 						a.btn.btn--primary-action(href=buttonLink)= buttonCopy
 
-			+image-caption(img, caption1, caption2)
+			if img
+				+image-caption(img, caption1, caption2)
 
 mixin masthead-4(headline, copy, img)
 	.masthead-4

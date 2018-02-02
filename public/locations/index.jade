@@ -1,6 +1,9 @@
+include ../partials/breadcrumbs.jade
 include ../partials/masthead.jade
 include ../partials/image-text.jade
 include ../partials/cross-sell.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/locations", title: "All Locations"})
 
 .content-wrap
 	+masthead-2("All Locations", "287 Office Locations · 59 Cities", "https://cdn.wework.com/6vy33zo2mgy3/3PYfigapby6GySkWmCiw0U/584a41ca2c2ec680ddcd4bcf550773f9/c643b8a57d10f74b5c39bee4ec4e27056e20784e.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=400&h=400", "https://cdn.wework.com/6vy33zo2mgy3/2aojdcZgXWW2CiqqWcoIAu/0c090e6bbece9d41c49ad7e64ba1099c/869bbe964795339540aea2f1bdd8b359.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=1000&h=500")

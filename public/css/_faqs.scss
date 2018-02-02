@@ -2,6 +2,30 @@
 // FAQs
 // ---------------
 
+.faqs {
+	@extend .responsive-block;
+
+	h2 {
+		@extend .title-1;
+	}
+
+	p {
+		@extend .copy-2;
+		margin: 0 0 $spacer-xs;
+
+		@media (min-width: $screen-sm-min) {
+			margin: 0 0 $spacer-sm;
+		}
+
+		@media (min-width: $screen-md-min) {
+			margin: 0 0 $spacer-md;
+		}
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 0 $spacer-lg;
+		}
+	}
+}
 
 .faq-question {
 	@extend .block-white;
@@ -14,6 +38,7 @@
 
 	p {
 		@extend .copy-2;
+		margin: 0;
 	}
 
 	&:not(:last-of-type) {
