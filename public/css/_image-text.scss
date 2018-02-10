@@ -3,22 +3,19 @@
 // ---------------
 
 .large-image-text {
-	@extend .responsive-block;
-	padding-top: 0;
-	
-	.image-caption {
-		margin: 0 0 $spacer-xs;
+	.row {
+		margin: $spacer-xs 0 $spacer-sm;
 
 		@media (min-width: $screen-sm-min) {
-			margin: 0 0 $spacer-sm;
+			margin: $spacer-sm 0 $spacer-md;
 		}
 
 		@media (min-width: $screen-md-min) {
-			margin: 0 0 $spacer-md;
+			margin: $spacer-md 0 $spacer-lg;
 		}
 
 		@media (min-width: $screen-lg-min) {
-			margin: 0 0 $spacer-lg;
+			margin: $spacer-lg 0 $spacer-xl;
 		}
 	}
 }

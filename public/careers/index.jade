@@ -1,0 +1,73 @@
+include ../partials/breadcrumbs.jade
+include ../partials/masthead.jade
+include ../partials/video.jade
+include ../partials/breakout-image.jade
+include ../partials/item-list.jade
+include ../partials/image-text.jade
+include ../partials/cross-sell.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/careers", title: "Careers"})
+
++masthead-2("Join Our Team", "A career at WeWork is for the curious, the caring, the courageous, and the collaborative.", "https://cdn.wework.com/6vy33zo2mgy3/7KzQECBjzya8SeAWKoOMA6/1c187893000417dfdc6c0f71339bfb6e/20170803_City_Hall_-_19th_Floor-20.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=entropy&fit=crop&w=2000&h=1000", "https://cdn.wework.com/6vy33zo2mgy3/1X0fkHYndO4kw2OWEmQOWc/3780c892222ebfb69359aec6ce5e51fb/20170327_Tysons_-_Offices-6.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=entropy&fit=crop&w=2000&h=1000")
+
++video("What it means to work here", "Our story begins with our spaces, where dreamers and go-getters come together to manifest our mantra: Create Your Life’s Work. We’re crafting a world where personal success is defined by more than just a bottom line—and we’re well on our way. But, to be frank, this isn’t any old summer stroll down Daisy Lane. The challenge of bringing the world of work to new ground is that the road isn’t going to be paved. WeWork is a place where every day is a new adventure. We follow the path of most resistance, because we’re hungry for the satisfaction of conquering a new challenge. The best way to do that is as a team. We know we’re all in this together.", "FZmgFLgbTmo")
+
++breakout-image("Magic to Monday morning", "We’re devoted to empowering global communities and building the best places to work, and that goes for our own teams too. Whether in one of our member spaces or at HQ, enjoy fresh fruit water and barista service, quiet rooms, happy plants, and more. At annual events like Summit and Summer Camp, the entire company convenes in fresh environments where paddleboarding and roller coasters lead to radical collaboration.", "", "", "https://media.glassdoor.com/l/cf/84/1b/d7/wework-s-hq-is-located-in-manhattan-s-chelsea-designed-to-foster.jpg", "WeWork HQ", "New York City, New York")
+
+.item-list
+	.content-wrap
+		.row
+			.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+				h2.title-1 Our Values
+				p.copy-2 Living and working with intent is what’s most important to us. Our values set the foundation for the work we do. These aren’t just buzzwords. Regardless of what department we’re in, they’re the guiding force that creates our company culture. They keep us on the same page. They keep us honest. As a team, it’s our job to use these values to elevate our members, helping them achieve more and be better as a part of our community.
+				+item-list-item("Inspired", "We do what we love and are connected to something greater than ourselves.")
+				+item-list-item("Entrepreneurial", "We are creators, leaders, and self-starters. We try new things, we challenge convention, and we’re not afraid to fail.")
+				+item-list-item("Authentic", "We are genuine to our brand, mission, and values. We're not perfect, and we don't pretend to be. We are always honest and as transparent as we can be.")
+				+item-list-item("Tenacious", "We never settle. We get shit done and we get it done well. Be persistent and knock down walls–literally if you have to. You have our permission.")
+				+item-list-item("Grateful", "We are grateful for each other, our members, and to be part of this movement. We don't take success for granted. We’re happy to be alive.")
+				+item-list-item("Together", "We are in this together. This is a team effort. We always look out for one another. We have empathy, we know we're all human, and know we can’t do any of this alone.")
+
++large-image-text("", "", "", "", "https://d24wuq6o951i2g.cloudfront.net/img/events/id/247/2477700/assets/ea8.20841171_1845365398808844_7081786525529493348_n.jpg", "WeWork Summer Camp 2017", "Eridge Park, United Kingdom")
+
+.responsive-block
+	.content-wrap
+		.row
+			.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+				h2.title-1 Benefits at WeWork
+				p.copy-2 Specific benefits vary by location.
+				ul.bulleted-list
+					li World-class insurance (health, dental, vision, life, and disability).
+					li Wellness programs including yoga, sound baths, running clubs, kickboxing, krav maga, dance cardio, meditation, rock climbing, and more.
+					li Discounts on gym memberships, travel, hotels, cell phone plans, and more lifestyle perks.
+					li Generous retirement savings plans.
+					li Free breakfast, Monday-night dinners, and surprise snacks.
+					li Company events and retreats like WeWork Summer Camp and Summit, nightly programming for professional, educational, and social events in every city.
+					li Participation in our equity incentive plan.
+					li Commuter benefits.
+					li Paid vacation and holidays.
+					li Unlimited sick days.
+					li Free micro-roasted coffee from barista-serviced café.
+					li Fruit water and beer on tap.
+
+.responsive-block.block-bg-1
+	.content-wrap
+		.row
+			.col-xs-12.col-md-8
+				h2.title-1 So, are you up for it?
+				p.copy-2 Being the right fit for WeWork means bringing your whole self into this community. That’s the core of our culture. If you’re comfortable in your skin, but still wake up every morning eager to learn and grow—we want you. If you’re a realist-optimist, but still believe you can help make the world a better place—we want you.
+		.row.cross-sell-container
+			.col-xs-12.col-sm-6.col-md-4
+				+cross-sell("https://cdn.wework.com/6vy33zo2mgy3/6omvoEMwViMIES6YCUOy8q/642f09a0e234b033bb2d1349c8a3b3ac/20161103_DuPont_Common_Areas-17.jpg", "Product", "4 openings", "Learn More", "/careers/product")
+			.col-xs-12.col-sm-6.col-md-4
+				+cross-sell("https://cdn.wework.com/6vy33zo2mgy3/Jzjd7OsV0WYOsUWSI8QEm/6ad8c6f619774fa022fa6253153c92f4/berlin.jpg", "Technology", "23 openings", "Learn More", "/careers/technology")
+			.col-xs-12.col-sm-6.col-md-4
+				+cross-sell("https://cdn.wework.com/6vy33zo2mgy3/3bmLHREnm8i80iA0meEY6w/6e165790ce585fee12a8c289444eee93/mission-video-image.jpg", "Community", "67 openings", "Learn More", "/careers/community")
+
+.responsive-block
+	.content-wrap
+		.row
+			.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+				h2.title-3 WeWork is an Equal Opportunity Employer
+				p.copy-3 WeWork is committed to equal employment opportunity. WeWork prohibits discrimination or harassment against any employee or applicant for employment based on race, color, creed, religion, sex, physical or mental disability, genetic information, age and/or any other protected category protected by federal or state law or local ordinance.
+				p.copy-3 New York law also prohibits discrimination against employees, applicants for employment, individuals providing services in the workplace pursuant to a contract, unpaid interns and volunteers based on their sexual orientation, gender, gender identity, gender expression, ancestry, marital status, registered domestic partner status, military and veteran status, civil air patrol status, national origin, pregnancy (including childbirth and related medical conditions, and including medical conditions related to lactation) or medical condition (cancer and genetic characteristics). For purposes of this policy, discrimination on the basis of “national origin” also includes discrimination against an individual because that person holds or presents the California driver’s license issued to those who cannot document their lawful presence in the United States. WeWork will not tolerate discrimination or harassment based upon these characteristics or any other characteristics protected by applicable federal, state or local law.
+				p.copy-3 An applicant’s or employee’s immigration status will not be considered for any WeWork employment purpose except as necessary to comply with federal, state or local laws.
