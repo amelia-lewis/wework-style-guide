@@ -53,3 +53,74 @@ include ../partials/logo-grid.jade
 					{img: "https://static.brandfolder.com/salesforce/logo/salesforce-primary-logo.png", type: "stacked"},
 					{img: "https://s-media-cache-ak0.pinimg.com/originals/0f/94/6d/0f946df6d767c5f3aa2664d2f4859ea2.png", type: "stacked"},
 					{img: "http://logos-download.com/wp-content/uploads/2016/10/Deloitte_logo_black.png", type: "horizontal"})
+
+.form-container-outer(style="background-image: url('https://cdn.wework.com/6vy33zo2mgy3/4xm8cywfeEmoeSGAWS2Co6/ca740cedc4812b2032d4f57d26fd6453/e21e26c28502e6ab3b381e2b21e79e120ba4a558.png')")
+	.content-wrap
+		.row
+			.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+				.form-container-inner
+					.row
+						.col-xs-12
+							h2.title-2 Interested?
+							p.copy-2 Complete the form below and our team will contact you.
+
+					.row
+						.col-xs-12.col-md-6
+							label(for="name") Name *
+								input(type="text" id="name" name="name" placeholder="Your full name")
+
+						.col-xs-12.col-md-6
+							label(for="company-name") Company Name *
+								input(type="text" id="company-name" name="company-name" placeholder="Company interested in workspace")
+
+					.row
+						.col-xs-12.col-md-6
+							label(for="email") Email *
+								input(type="email" id="email" name="email" placeholder="Best email to contact you")
+
+						.col-xs-12.col-md-6
+							label(for="location") Location *
+								input(type="text" id="location" name="location" placeholder="E.g. Los Angeles, California")
+
+					.row
+						.col-xs-12.col-md-6
+							label(for="job-title") Job Title
+								input(type="text" id="job-title" name="job-title" placeholder="Your job title")
+
+						.col-xs-12.col-md-6
+							label.label--dropdown(for="number-of-people") Number of People
+								select(id="number-of-people" name="number-of-people")
+									option Please select...
+									option(value="1-person") 1 person
+									option(value="2-people") 2 people
+									option(value="3-people") 3 people
+									option(value="4-people") 4 people
+									option(value="5-people") 5 people
+									option(value="6-people") 6 people
+									option(value="7-people") 7 people
+									option(value="8-people") 8 people
+									option(value="9-people") 9 people
+									option(value="10-people") 10 people
+									option(value="11–25-people") 11–25 people
+									option(value="26–99-people") 26–99 people
+									option(value="100+-people") 100+ people
+								i.bi_interface-bottom
+
+					.row
+						.col-xs-12.col-md-6
+							label(for="phone") Phone
+								input(type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX")
+
+						.col-xs-12.col-md-6
+							label.label--date(for="date") Date
+								input(type="date" id="date" name="date" placeholder="Proposed move-in date")
+								i.bi_interface-calendar
+
+					.row
+						.col-xs-12
+							label(for="notes") Additional Notes
+								textarea(id="notes" name="notes" placeholder="Anything else we should know? Amentity spaces, AV needs, meeting rooms...")
+
+					.row
+						.col-xs-12
+							button.btn.btn--primary-action Submit
