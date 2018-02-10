@@ -62,7 +62,7 @@ include ../partials/logo-grid.jade
 					.row
 						.col-xs-12
 							h2.title-2 Interested?
-							p.copy-2 Complete the form below and our team will contact you.
+							p.copy-2 Fill out the form below and our team will contact you directly.
 
 					.row
 						.col-xs-12.col-md-6
@@ -70,7 +70,7 @@ include ../partials/logo-grid.jade
 								input(type="text" id="name" name="name" placeholder="Your full name")
 
 						.col-xs-12.col-md-6
-							label(for="company-name") Company Name *
+							label(for="company-name") Company *
 								input(type="text" id="company-name" name="company-name" placeholder="Company interested in workspace")
 
 					.row
@@ -84,11 +84,22 @@ include ../partials/logo-grid.jade
 
 					.row
 						.col-xs-12.col-md-6
+							label(for="phone") Phone
+								input(type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX")
+							
+
+						.col-xs-12.col-md-6
+							label.label--date(for="date") Move-in Date *
+								input(type="date" id="date" name="date" placeholder="Proposed move-in date")
+								i.bi_interface-calendar
+
+					.row
+						.col-xs-12.col-md-6
 							label(for="job-title") Job Title
 								input(type="text" id="job-title" name="job-title" placeholder="Your job title")
 
 						.col-xs-12.col-md-6
-							label.label--dropdown(for="number-of-people") Number of People
+							label.label--dropdown(for="number-of-people") Number of People *
 								select(id="number-of-people" name="number-of-people")
 									option Please select...
 									option(value="1-person") 1 person
@@ -105,16 +116,6 @@ include ../partials/logo-grid.jade
 									option(value="26–99-people") 26–99 people
 									option(value="100+-people") 100+ people
 								i.bi_interface-bottom
-
-					.row
-						.col-xs-12.col-md-6
-							label(for="phone") Phone
-								input(type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX")
-
-						.col-xs-12.col-md-6
-							label.label--date(for="date") Date
-								input(type="date" id="date" name="date" placeholder="Proposed move-in date")
-								i.bi_interface-calendar
 
 					.row
 						.col-xs-12
