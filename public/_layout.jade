@@ -26,7 +26,137 @@ html
 		!= yield
 
 		footer
-			.content-wrap
-				.row
-					.col-12
-						p.copy-1 Footer
+			.footer-top
+				.content-wrap
+					.row
+						.col-xs-12.col-md-6
+							h3.title-2 Stay in Touch
+							p.copy-2 Sign up for offers, updates, and more.
+
+						.col-xs-12.col-md-6
+							.inline-input-button
+								label(for="email") Email
+									input(type="email" id="email" name="email" placeholder="Best email to contact you")
+
+								button.btn.btn--primary-action Submit
+
+			.footer-mid
+				.content-wrap
+					.row
+						.col-xs-12.col-lg-2
+							a(href="/").footer-logo
+								include partials/logo
+							
+							label.label--dropdown(for="language") Langauge
+								select(id="language" name="language")
+									option(value="") English
+									option(value="zh-CN") 中文 (简体)
+									option(value="zh-TW") 中文 (繁體)
+									option(value="nl-NL") Nederlands
+									option(value="fr-FR") Français
+									option(value="fr-CA") Français (CA)
+									option(value="de-DE") Deutsch
+									option(value="es-ES") Español (ES)
+									option(value="es-LA") Español (LA)
+									option(value="ja-JP") 日本語
+									option(value="ko-KR") 한국어
+									option(value="pt-BR") Português
+									option(value="ru-RU") Pусский
+								i.bi_interface-bottom
+
+						.col-xs-12.col-md-4.col-lg-3.col-lg-offset-1
+							h4.title-4 WeWork
+							ul
+								li: a(href="/locations") Office Space Locations
+								li: a(href="/plans") Plans &amp; Pricing
+								li: a(href="/mission") Our Mission
+								li: a(href="/enterprise") Enterprise
+								li: a(href="/") Get Help
+								li: a(href="/") Careers
+								li: a(href="/") Press &amp; Media
+								li: a(href="/") Events
+								li: a(href="/") Blog
+
+						.col-xs-12.col-md-4.col-lg-3
+							h4.title-4 Brokers &amp; Referrals
+							ul
+								li: a(href="/") Broker Partnership
+								li: a(href="/") Referral Program
+
+							h4.title-4 Business Lines
+							ul
+								li
+									a(href="/")
+										| We.Co
+										i.bi_interface-out-link
+								
+								li
+									a(href="/")
+										| Services Store
+										i.bi_interface-out-link
+								
+								li
+									a(href="/")
+										| Creator Magazine
+										i.bi_interface-out-link
+								
+								li
+									a(href="/")
+										| Creator Awards
+										i.bi_interface-out-link
+								
+								li
+									a(href="/")
+										| WeLive
+										i.bi_interface-out-link
+								
+								li
+									a(href="/")
+										| WeGrow
+										i.bi_interface-out-link
+								
+								li
+									a(href="/")
+										| Meetup
+										i.bi_interface-out-link
+								
+								li
+									a(href="/")
+										| Flatiron School
+										i.bi_interface-out-link
+
+
+						.col-xs-12.col-md-4.col-lg-3
+							h4.title-4 Support
+							ul
+								li
+									a(href="https://goo.gl/maps/VHYnzt55WU12" target="_blank") WeWork HQ
+										br
+										| 115 W 18th St, Fl. 2
+										br
+										| New York, NY
+								li
+									a(href="")
+										i.bi_com-phone
+										| 1-877-801-4339
+
+							h4.title-4 Member Network
+							ul
+								li
+									a(href="/")
+										| Login
+										i.bi_interface-out-link
+								
+								li
+									a(href="/")
+										| App Store
+										i.bi_interface-out-link
+								
+								li
+									a(href="/")
+										| Play Store
+										i.bi_interface-out-link
+									
+
+
+

@@ -3,5 +3,102 @@
 // ---------------
 
 footer {
-	@extend .responsive-block;
+	@extend .block-black-50;
+	color: $white;
+
+	.footer-top {
+		@extend .responsive-block;
+		background: $black-50 url("../assets/img/bg-isobar-dk.jpg") repeat;
+		background-size: 600px;
+		border-bottom: 1px solid rgba($white, 0.1);
+
+		.inline-input-button {
+			display: flex;
+			align-items: flex-end;
+
+			label {
+				flex-grow: 1;
+				margin: 0;
+
+				input {
+					border-top-right-radius: 0;
+					border-bottom-right-radius: 0;
+				}
+			}
+
+			.btn {
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+		}
+	}
+
+	.footer-mid {
+		@extend .responsive-block;
+
+		.footer-logo {
+			display: block;
+			margin: 0 0 $spacer-xs;
+
+			@media (min-width: $screen-sm-min) {
+				margin: 0 0 $spacer-sm;
+			}
+
+			@media (min-width: $screen-md-min) {
+				margin: 0 0 $spacer-md;
+			}
+
+			@media (min-width: $screen-lg-min) {
+				margin: 0 0 $spacer-lg;
+			}
+
+			svg {
+				width: 173px;
+				height: 37px;
+				
+				path {
+					fill: $white;
+				}
+			}
+		}
+
+		.label--dropdown {
+			margin: 0 0 $spacer-md;
+			max-width: 300px;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0 0 $spacer-md;
+		}
+
+		a {
+			display: block;
+			@extend .text-light;
+			color: rgba($white, 0.8);
+			font-size: 16px;
+			line-height: 26px; 
+			margin: 0 0 10px;
+
+			&:hover {
+				color: $white;
+			}
+
+			@media (min-width: $screen-md-min) {
+				font-size: 18px;
+				line-height: 28px; 
+			}
+		}
+
+		i.bi_interface-out-link {
+			opacity: 0.4;
+			font-size: 80%;
+			margin: 0 0 0 5px;
+		}
+
+		i.bi_com-phone {
+			margin: 0 5px 0 0;
+		}
+	}
 }
