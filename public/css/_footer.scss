@@ -10,6 +10,7 @@ footer {
 		@extend .responsive-block;
 		background: $black-50 url("../assets/img/bg-isobar-dk.jpg") repeat;
 		background-size: 600px;
+		border-top: 1px solid rgba($white, 0.1);
 		border-bottom: 1px solid rgba($white, 0.1);
 
 		.inline-input-button {
