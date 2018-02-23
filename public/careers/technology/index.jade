@@ -1,0 +1,31 @@
+include ../../partials/breadcrumbs.jade
+include ../../partials/masthead.jade
+include ../../partials/image-text.jade
+include ../../partials/testimonial.jade
+
++breadcrumbs({link: "/", title: "Home"}, {link: "/careers", title: "Careers"}, {link: "/careers/technology", title: "Technology"})
+
++masthead-1("Technology at WeWork", "Our vibrant, thoughtfully-designed spaces are fully equipped and ready to book for your next public or private gathering. You don't have to be a WeWork member to get in on these fresh venues -- but after you use them, you just might want to be.", "https://cdn.wework.com/6vy33zo2mgy3/Jzjd7OsV0WYOsUWSI8QEm/6ad8c6f619774fa022fa6253153c92f4/berlin.jpg?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=800&h=600", "WeWork Chelsea", "New York City, New York")
+
+.block-bg-1
+	.content-wrap
+		.responsive-block
+			.row
+				.col-xs-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+					h2.title-1 We Develop WeWork’s Portfolio of Digital Products
+					p.copy-2 Tech is our hidden superpower. The website is just the tip of the iceberg. We develop member-facing products and internal business tools too, and the Technology team is the engine that enables the company to be so nimble and grow so rapidly.
+
++small-image-text-right("Love Your Team, Love Your Job", "As the touchpoint between our inspiring, entrepreneurial community and our own WeWork staff, we get the chance to build meaningful relationships on both sides of the fold—and of course within our own teams. Within a day, you might find yourself liaising with the founder of a sustainable sock company or an innovative app, interfacing with the WeWork web development team to design a splash page for your location’s next event, or headed to the bowling alley for an after-work happy hour with colleagues that feel more like friends.", "See Global Openings", "/", "https://cdn.wework.com/6vy33zo2mgy3/ybtjJuCpRQEI8eo0QuUKS/22bc48ceeabaa39c9b373761233986d8/0abf1012fe638762f4355aeef26d133ac042a335.png?auto=format%2Ccompress&dpr=2&ch=DPR%2CWidth&crop=false&fit=crop&w=400&h=400", "WeWork Sony Center", "Berlin, Germany")
+
+.block-bg-1
+	.content-wrap
+		.responsive-block
+			h2.title-1 Our Team
+			p.copy-2 Meet some people working in Technology at WeWork.
+			.row.testimonial-container
+				.col-xs-12.col-sm-6.col-md-4
+					+testimonial("https://images.contentful.com/6vy33zo2mgy3/7foqG1Cvn2yC2AKmaQgIe/feb3bb727fefae4646b9ad2a280384d4/IMG_1163.jpg", "You can feel the drive and tenacity that comes from this underdog culture.", "Celeste Glavin")
+				.col-xs-12.col-sm-6.col-md-4
+					+testimonial("https://images.contentful.com/6vy33zo2mgy3/3FoRh6XJ5uqGYYAOGMa8ia/ce44e7265be7351135736e6c7cf82160/E3EC227E-A33F-4409-8EC7-830E277B2B37.jpg", "We care both about quality work and quality people.", "Hanjie Ji")
+				.col-xs-12.col-sm-6.col-md-4
+					+testimonial("https://images.contentful.com/6vy33zo2mgy3/yaYwFpThy8Q8G6oq6CAgy/ba95dd4cbba16e188dc88d5264e72438/defrancesco_deanna.web.jpg", "Seems impossible, but somehow we do it.", "Deanna DeFrancesco")
