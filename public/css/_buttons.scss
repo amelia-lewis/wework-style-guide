@@ -1,18 +1,18 @@
 button,
 .btn {
 	display: inline-block;
-	height: 44px;
+	height: 40px;
 	font-size: 14px;
-	line-height: 42px;
+	line-height: 38px;
 	font-family: $apercu;
 	@extend .text-medium;
 	text-align: center;
 	position: relative;
 	cursor: pointer;
 	border: 2px solid;
-	border-radius: 5px;
+	border-radius: 3px;
 	box-shadow: none;
-	padding: 0 50px;
+	padding: 0 30px;
 	transition: all 200ms;
 
 	&.btn--block {
