@@ -2,6 +2,8 @@
 // Fonts
 // ---------------
 
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700|Oswald:500");
+
 @font-face {
 	font-family: "Knockout 48 A";
 	src: url("../assets/fonts/Knockout-HTF48-Featherweight.otf");
@@ -11,42 +13,42 @@
 
 @font-face {
 	font-family: "apercu";
-	src: url("../assets/fonts/apercu_light.eot");
-	src: url("../assets/fonts/apercu_light.eot?#iefix") format("embedded-opentype"),
-	url("../assets/fonts/apercu_light.woff2") format("woff2"),
-	url("../assets/fonts/apercu_light.woff") format("woff"),
-	url("../assets/fonts/apercu_light.ttf") format("truetype"),
-	url("../assets/fonts/apercu_light.svg#aperculight") format("svg");
+	src: url("./assets/fonts/apercu_light.eot");
+	src: url("./assets/fonts/apercu_light.eot?#iefix") format("embedded-opentype"),
+	url("./assets/fonts/apercu_light.woff2") format("woff2"),
+	url("./assets/fonts/apercu_light.woff") format("woff"),
+	url("./assets/fonts/apercu_light.ttf") format("truetype"),
+	url("./assets/fonts/apercu_light.svg#aperculight") format("svg");
 	font-weight: 200;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "apercu";
-	src: url("../assets/fonts/apercu_medium.eot");
-	src: url("../assets/fonts/apercu_medium.eot?#iefix") format("embedded-opentype"),
-	url("../assets/fonts/apercu_medium.woff2") format("woff2"),
-	url("../assets/fonts/apercu_medium.woff") format("woff"),
-	url("../assets/fonts/apercu_medium.ttf") format("truetype"),
-	url("../assets/fonts/apercu_medium.svg#apercumedium") format("svg");
+	src: url("./assets/fonts/apercu_medium.eot");
+	src: url("./assets/fonts/apercu_medium.eot?#iefix") format("embedded-opentype"),
+	url("./assets/fonts/apercu_medium.woff2") format("woff2"),
+	url("./assets/fonts/apercu_medium.woff") format("woff"),
+	url("./assets/fonts/apercu_medium.ttf") format("truetype"),
+	url("./assets/fonts/apercu_medium.svg#apercumedium") format("svg");
 	font-weight: 600;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "apercu";
-	src: url("../assets/fonts/apercu_bold.eot");
-	src: url("../assets/fonts/apercu_bold.eot?#iefix") format("embedded-opentype"),
-	url("../assets/fonts/apercu_bold.woff2") format("woff2"),
-	url("../assets/fonts/apercu_bold.woff") format("woff"),
-	url("../assets/fonts/apercu_bold.ttf") format("truetype"),
-	url("../assets/fonts/apercu_bold.svg#apercubold") format("svg");
+	src: url("./assets/fonts/apercu_bold.eot");
+	src: url("./assets/fonts/apercu_bold.eot?#iefix") format("embedded-opentype"),
+	url("./assets/fonts/apercu_bold.woff2") format("woff2"),
+	url("./assets/fonts/apercu_bold.woff") format("woff"),
+	url("./assets/fonts/apercu_bold.ttf") format("truetype"),
+	url("./assets/fonts/apercu_bold.svg#apercubold") format("svg");
 	font-weight: 700;
 	font-style: normal;
 }
 
-$knockout: "Knockout 48 A", "Knockout 48 B", "Helvetica", "Arial", sans-serif;
-$apercu: "apercu", "Helvetica", "Arial", sans-serif;
+$knockout: "Knockout 48 A", "Knockout 48 B", "Oswald", "Helvetica", "Arial", sans-serif;
+$apercu: "apercu", "Helvetica", "Karla", "Arial", sans-serif;
 
 .text-light {
 	font-weight: 200;
